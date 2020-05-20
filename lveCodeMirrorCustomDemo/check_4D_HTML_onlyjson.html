@@ -1,0 +1,2806 @@
+<!DOCTYPE html>
+<html class="is_onlyjson">
+  <head>
+    <meta charset="UTF-8" />
+    <title>check_4D_HTML</title>
+    <meta name="description" content="check_4D_HTML" />
+    <meta name="author" content="LVE" />
+    <meta name="date" content="2018-09-02T15:00:30+01:00" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="./codemirror/addon/fold/foldgutter.css" />
+    <link rel="stylesheet" href="./codemirror/addon/lint/lint.css" />
+    <link rel="stylesheet" href="./codemirror/addon/hint/show-hint.css" />
+    <link rel="stylesheet" href="./codemirror/addon/scroll/simplescrollbars.css" />
+    <link rel="stylesheet" href="./codemirror/addon/merge/merge.css" />
+    <link rel="stylesheet" href="./codemirror/addon/dialog/dialog.css" />
+    <link rel="stylesheet" href="./codemirror/addon/search/matchesonscrollbar.css" />
+    <link rel="stylesheet" href="./codemirror/theme/3024-day.css" />
+    <link rel="stylesheet" href="./codemirror/theme/3024-night.css" />
+    <link rel="stylesheet" href="./codemirror/theme/ambiance-mobile.css" />
+    <link rel="stylesheet" href="./codemirror/theme/ambiance.css" />
+    <link rel="stylesheet" href="./codemirror/theme/base16-dark.css" />
+    <link rel="stylesheet" href="./codemirror/theme/base16-light.css" />
+    <link rel="stylesheet" href="./codemirror/theme/blackboard.css" />
+    <link rel="stylesheet" href="./codemirror/theme/cobalt.css" />
+    <link rel="stylesheet" href="./codemirror/theme/colorforth.css" />
+    <link rel="stylesheet" href="./codemirror/theme/eclipse.css" />
+    <link rel="stylesheet" href="./codemirror/theme/elegant.css" />
+    <link rel="stylesheet" href="./codemirror/theme/erlang-dark.css" />
+    <link rel="stylesheet" href="./codemirror/theme/lesser-dark.css" />
+    <link rel="stylesheet" href="./codemirror/theme/mbo.css" />
+    <link rel="stylesheet" href="./codemirror/theme/mdn-like.css" />
+    <link rel="stylesheet" href="./codemirror/theme/midnight.css" />
+    <link rel="stylesheet" href="./codemirror/theme/monokai.css" />
+    <link rel="stylesheet" href="./codemirror/theme/neat.css" />
+    <link rel="stylesheet" href="./codemirror/theme/neo.css" />
+    <link rel="stylesheet" href="./codemirror/theme/night.css" />
+    <link rel="stylesheet" href="./codemirror/theme/paraiso-dark.css" />
+    <link rel="stylesheet" href="./codemirror/theme/paraiso-light.css" />
+    <link rel="stylesheet" href="./codemirror/theme/pastel-on-dark.css" />
+    <link rel="stylesheet" href="./codemirror/theme/rubyblue.css" />
+    <link rel="stylesheet" href="./codemirror/theme/solarized.css" />
+    <link rel="stylesheet" href="./codemirror/theme/the-matrix.css" />
+    <link rel="stylesheet" href="./codemirror/theme/tomorrow-night-bright.css" />
+    <link rel="stylesheet" href="./codemirror/theme/tomorrow-night-eighties.css" />
+    <link rel="stylesheet" href="./codemirror/theme/ttcn.css" />
+    <link rel="stylesheet" href="./codemirror/theme/twilight.css" />
+    <link rel="stylesheet" href="./codemirror/theme/vibrant-ink.css" />
+    <link rel="stylesheet" href="./codemirror/theme/xq-dark.css" />
+    <link rel="stylesheet" href="./codemirror/theme/xq-light.css" />
+    <link rel="stylesheet" href="./codemirror/theme/zenburn.css" />
+    <script type="text/javascript" src="./codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="./codemirror/lib/util/formatting.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/selection/selection-pointer.js"></script>
+    <script type="text/javascript" src="./codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="./codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="./codemirror/mode/css/css.js"></script>
+    <script type="text/javascript" src="./codemirror/mode/vbscript/vbscript.js"></script>
+    <script type="text/javascript" src="./codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/fold/foldcode.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/fold/foldgutter.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/fold/brace-fold.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/fold/xml-fold.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/fold/comment-fold.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/jshint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/jsonlint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/csslint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/lint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/javascript-lint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/json-lint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/lint/css-lint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/hint/show-hint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/hint/javascript-hint.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/scroll/simplescrollbars.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/merge/diff_match_patch.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/merge/merge.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/dialog/dialog.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/search/searchcursor.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/search/search.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/scroll/annotatescrollbar.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/search/matchesonscrollbar.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/edit/matchtags.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/edit/trailingspace.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/selection/active-line.js"></script>
+    <script type="text/javascript" src="./codemirror/mode/clike/clike.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/edit/matchbrackets.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/edit/closebrackets.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/comment/comment.js"></script>
+    <script type="text/javascript" src="./codemirror/addon/wrap/hardwrap.js"></script>
+    <script type="text/javascript" src="./codemirror/keymap/sublime.js"></script>
+
+    <style type="text/css">
+      .CodeMirror {border: 1px solid lightgray;}
+      *:not(.CodeMirror-merge-pane) > .CodeMirror, .CodeMirror-merge.CodeMirror-merge-2pane {width: 100%; height: 100% !important; resize: none;}
+      .CodeMirror-merge-2pane .CodeMirror-merge-pane, .CodeMirror-merge-2pane .CodeMirror-merge-pane > div {height: 100% !important; resize: none;}
+      .CodeMirror-merge-2pane .CodeMirror-merge-gap {height: 100% !important; resize: none;}
+      .cDefaultClosed {resize: vertical; overflow: auto; height: 80px; min-height: 80px; margin-right: 1px; background-color: rgba(255, 255, 255, 0.33); padding-bottom: 15px;}
+      .cDefaultClosed textarea {height: 100% !important; resize: none;}
+      .cm-trailingspace {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUXCToH00Y1UgAAACFJREFUCNdjPMDBUc/AwNDAAAFMTAwMDA0OP34wQgX/AQBYgwYEx4f9lQAAAABJRU5ErkJggg==);
+        background-position: bottom left;
+        background-repeat: repeat-x;
+      }
+      /* -- visibletabs -- */
+      .CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+      .cm-tab {
+         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+         background-position: right;
+         background-repeat: no-repeat;
+      }
+    </style>
+    <style type="text/css" id="mainSheet1">
+      html {
+        min-height: 100%;
+        min-width: 915px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      body {
+        min-height: 90%;
+        background-color: rgb(186, 206, 250);
+        min-width: 915px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 17px; /* scrollbar space for autohide scrollbars */
+        padding-bottom: 17px; /* scrollbar space for autohide scrollbars */
+      }
+      html.is_NP_noAppleDevice > body {
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+      h3 {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        margin-left: 20px;
+        float: left;
+        color: rgb(104, 104, 104);
+      }
+      h3:before {
+        content: "\25BC";
+        position: absolute;
+        margin-left: -20px;
+        margin-top: 2px;
+        font-size: 0.85em;
+        color: lightblue;
+      }
+      h3.h3closed:before {
+        content: "\25B6";
+      }
+      .h3_box {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 99.2%;
+        min-width: 99.2%;
+        width: calc(100% - 8px);
+        min-width: calc(100% - 8px);
+        border: 1px solid lightgray;
+        /* border-bottom-width: 0px; */
+        padding-left: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-bottom: -1px;
+        overflow: hidden;
+      }
+      .myContA {
+        padding: 5px;
+      }
+      #cont_form {
+        width: 35%;
+        float: left;
+        background-color: rgba(144, 238, 144, 0.8);
+      }
+      #cont_form input {
+        width: 95%;
+      }
+      #cont_results {
+        min-width: 60.9%;
+        float: left;
+        background-color: lightblue;
+      }
+      #cont_results textarea {
+        width: 95%;
+        min-height: 80%;
+      }
+
+      .allLintMess {
+        height: 0;
+        max-height: 150px;
+        overflow: scroll;
+        line-height: 0;
+        font-size: 0;
+        white-space: pre-wrap;
+        color: rgb(92, 92, 92);
+        background-color: rgba(250, 255, 114, 0.5);
+        -webkit-transition: all 400ms ease-in-out;
+        -o-transition: all 400ms ease-in-out;
+        -moz-transition: all 400ms ease-in-out;
+        -ms-transition: all 400ms ease-in-out;
+        transition: all 400ms ease-in-out;
+      }
+      .allLintMess:focus {
+        height: auto;
+        line-height: initial;
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 4px;
+      }
+
+      html.is_allmin #cont_head,
+      html.is_allmin #cont_results {
+        display: none;
+      }
+
+      html.is_onlycssmerge #cont_ShowHide,
+      html.is_onlycssmerge #cont_head,
+      html.is_onlycssmerge #cont_form,
+      html.is_onlycssmerge #cont_results,
+      html.is_onlycssmerge .box_editor3,
+      html.is_onlycssmerge .box_editor4,
+      html.is_onlycssmerge .box_editor1,
+      html.is_onlycssmerge #box_editor1preview {
+        display: none;
+      }
+
+      html.is_onlymerge #cont_ShowHide,
+      html.is_onlymerge #cont_head,
+      html.is_onlymerge #cont_form,
+      html.is_onlymerge #cont_results,
+      html.is_onlymerge .box_editor2,
+      html.is_onlymerge .box_editor3,
+      html.is_onlymerge .box_editor4,
+      html.is_onlymerge .box_editor1,
+      html.is_onlymerge #box_editor1preview {
+        display: none;
+      }
+
+      html.is_onlycsshtml #cont_ShowHide,
+      html.is_onlycsshtml #cont_head,
+      html.is_onlycsshtml #cont_form,
+      html.is_onlycsshtml #cont_results,
+      html.is_onlycsshtml .box_editor3,
+      html.is_onlycsshtml .box_editor4,
+      html.is_onlycsshtml .box_editorsMerge,
+      html.is_onlycsshtml #box_editor1preview {
+        display: none;
+      }
+
+      html.is_onlyhtml #cont_ShowHide,
+      html.is_onlyhtml #cont_head,
+      html.is_onlyhtml #cont_form,
+      html.is_onlyhtml #cont_results,
+      html.is_onlyhtml .box_editor2,
+      html.is_onlyhtml .box_editor3,
+      html.is_onlyhtml .box_editor4,
+      html.is_onlyhtml .box_editorsMerge,
+      html.is_onlyhtml #box_editor1preview {
+        display: none;
+      }
+
+      html.is_onlycss #cont_ShowHide,
+      html.is_onlycss #cont_head,
+      html.is_onlycss #cont_form,
+      html.is_onlycss #cont_results,
+      html.is_onlycss .box_editor3,
+      html.is_onlycss .box_editor4,
+      html.is_onlycss .box_editorsMerge,
+      html.is_onlycss .box_editor1,
+      html.is_onlycss #box_editor1preview {
+        display: none;
+      }
+
+      html.is_onlyjs #cont_ShowHide,
+      html.is_onlyjs #cont_head,
+      html.is_onlyjs #cont_form,
+      html.is_onlyjs #cont_results,
+      html.is_onlyjs .box_editor2,
+      html.is_onlyjs .box_editor4,
+      html.is_onlyjs .box_editorsMerge,
+      html.is_onlyjs .box_editor1,
+      html.is_onlyjs #box_editor1preview {
+        display: none;
+      }
+
+      html.is_onlyjson #cont_ShowHide,
+      html.is_onlyjson #cont_head,
+      html.is_onlyjson #cont_form,
+      html.is_onlyjson #cont_results,
+      html.is_onlyjson .box_editor2,
+      html.is_onlyjson .box_editor3,
+      html.is_onlyjson .box_editorsMerge,
+      html.is_onlyjson .box_editor1,
+      html.is_onlyjson #box_editor1preview {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      var MeinFenster, myBody;
+      myBody = 'body';
+
+      /* ----------------------------------
+       * replaceAnyTextFragments Version 0.1
+       * Funktion zum Ersetzen von Anzeige-Texten
+       * Einschraenkung: Die Funktion nutzt rekursiven Aufruf, somit darf die DOM-Struktur nicht tiefer verschachtelt sein als die JS-Engine verschachtelte Aufrufe haendeln kann!
+       */
+      function replaceTextFragments(myEl, myOldTxt, myNewTxt) {
+        var myOldTxtExp = RegExp(String(myOldTxt).replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1'), 'g');
+        if ((myEl.tagName !== "SCRIPT") && (myEl.tagName !== "STYLE") && (myEl.tagName !== "NOSCRIPT") && (myEl = myEl.firstChild)) do {
+          replaceTextFragments(myEl, myOldTxt, myNewTxt);
+          if ((myEl.nodeType === 3) && (myEl.nodeValue.match(myOldTxtExp))) {
+            myEl.nodeValue = myEl.nodeValue.replace(myOldTxtExp, myNewTxt);
+          }
+        } while ((myEl = myEl.nextSibling));
+      }
+      
+      function insertAnyStyles(myCSS, myID) {
+        var myHead, myStyleNode;
+        myHead = document.head || document.getElementsByTagName('head')[0];
+        myStyleNode = document.createElement('style');
+        myStyleNode.setAttribute("type", "text/css");
+        if ((typeof myID === 'string') && (myID.length > 1)) {
+          myStyleNode.setAttribute("id", myID);
+        }
+        if (myStyleNode.styleSheet) {
+          myStyleNode.styleSheet.cssText = myCSS;  /* for IE */
+        } else if (typeof myStyleNode.textContent === 'string') {
+          myStyleNode.textContent = myCSS;
+        } else {
+          myStyleNode.appendChild(document.createTextNode(myCSS));
+        }
+        myHead.appendChild(myStyleNode);
+      }
+
+      function setDocElClassInfos() {
+        var mySearchPars, myI, myNavPlat;
+        if (location.hash.length > 0) document.documentElement.classList.add('is_'+location.hash.replace(/[^a-zA-Z0-9]/g,'').toLowerCase());
+        if (location.search.length > 0) {
+          mySearchPars = location.search.replace(/[^a-zA-Z0-9&]/g,'').toLowerCase().split('&');
+          for (myI = 0; myI < mySearchPars.length; myI++) {
+            document.documentElement.classList.add('is_'+mySearchPars[myI]);
+          }
+        }
+        myNavPlat = navigator.platform.toUpperCase();
+        if (typeof myNavPlat === 'string') {
+          document.documentElement.classList.add('is_NP_' + myNavPlat);
+          document.documentElement.classList.add('is_NP_' + (myNavPlat.match(/(Mac|iPhone|iPod|iPad)/i) ? 'AppleDevice' : 'noAppleDevice'));
+          document.documentElement.classList.add('is_NP_' + (myNavPlat.match(/(MacIntel)/i) ? 'OSXDevice' : 'noOSXDevice'));
+          document.documentElement.classList.add('is_NP_' + (myNavPlat.match(/(iPhone|iPod|iPad)/i) ? 'IOSDevice' : 'noIOSDevice'));
+        }
+      }
+      setDocElClassInfos();
+
+      function startCheckHTMLSrc(myPartType) {
+        var i, ii, myTmpTxt, myHTMLDOM, myHTMLSrcTxt;
+        myHTMLSrcTxt = document.getElementById('code_source').value;
+        if ((!(myPartType)) || (typeof myPartType !== 'string')) myPartType = '';
+        myPartType = myPartType.toUpperCase();
+        setSourceCode(myHTMLSrcTxt, 'text/html', true, myPartType);
+        document.getElementById('results_box1_txt1').textContent = '';
+        document.getElementById('results_box2_txt1').textContent = '';
+        document.getElementById('results_box3a_txt1').textContent = '';
+        document.getElementById('results_box3_txt1').textContent = '';
+        if ((myPartType === 'HTML') || (myPartType === 'BODY')) return false;
+        /* ===========
+        myHTMLDOM = new DOMParser().parseFromString("<html><head>" + myHTMLSrcTxt + "</head><" + myBody + "></" + myBody + "></html>", "text/html");
+        var myScriptsStyles = myHTMLDOM.querySelectorAll('script, style');
+        for (i = 0; i < myScriptsStyles.length; i++) {
+          if (myScriptsStyles[i].textContent.length > 2) {
+            myHTMLSrcTxt = myHTMLSrcTxt.replace(myScriptsStyles[i].textContent, '');
+          }
+        }
+        =========== */
+        var parser = new DOMParser();
+        //var doc = parser.parseFromString('<mydocparsroot>' + myHTMLSrcTxt.replace(/\&/g, '') + '</mydocparsroot>', "application/xml");
+        var doc = parser.parseFromString("<html><head>" + myHTMLSrcTxt.replace("<html", "<html_").replace("</html", "</html_").replace("<head", "<head_").replace("</head", "</head_").replace("<" + myBody + "", "<" + myBody + "_").replace("</" + myBody + "", "</" + myBody + "_") + "</head><" + myBody + "></" + myBody + "></html>", "text/html");
+        //if (doc.querySelectorAll('parsererror').length > 0) alert(doc.querySelectorAll('parsererror')[0].textContent);
+        if (doc.querySelectorAll('parsererror').length > 0) doc.querySelectorAll('parsererror')[0].remove();
+        //var notAllowedTagsInHEAD = doc.querySelectorAll(':not(mydocparsroot):not(title):not(style):not(base):not(link):not(meta):not(script):not(noscript)');
+        var notAllowedTagsInHEAD = doc.querySelectorAll(':not(html):not(head):not(body):not(title):not(style):not(base):not(link):not(meta):not(script):not(noscript)');
+        var notAllowedTagsInHTMLSrc = doc.querySelectorAll('xyz');
+        myTmpTxt = '';
+        if ((notAllowedTagsInHEAD.length > 0) || (doc.body.childNodes.length)) {
+          for (i = 0; i < notAllowedTagsInHEAD.length; i++) {
+            if (notAllowedTagsInHEAD[i].innerHTML.length > 2) {
+              myTmpTxt += notAllowedTagsInHEAD[i].outerHTML.replace(notAllowedTagsInHEAD[i].innerHTML, '...').replace(' xmlns="http://www.w3.org/1999/xhtml"', '').replace("<html_", "<html").replace("</html_", "</html").replace("<head_", "<head").replace("</head_", "</head").replace("<" + myBody + "_", "<" + myBody + "").replace("</" + myBody + "_", "</" + myBody + "") + '\n\n';
+            } else {
+              myTmpTxt += notAllowedTagsInHEAD[i].outerHTML.replace(' xmlns="http://www.w3.org/1999/xhtml"', '').replace("<html_", "<html").replace("</html_", "</html").replace("<head_", "<head").replace("</head_", "</head").replace("<" + myBody + "_", "<" + myBody + "").replace("</" + myBody + "_", "</" + myBody + "") + '\n\n';
+            }
+          }
+          if (notAllowedTagsInHEAD.length > 0) {
+            myTmpTxt = 'Fehler: Folgende Tags sind nicht erlaubt im HTML-HEAD(incl. HTMLSrc):\n\n' + myTmpTxt + '\n';
+          }
+          var myNode = doc.body.firstChild;
+          i = 0;
+          while (myNode != null) {
+            if ((myNode.nodeType == 3) && (myNode.nodeValue.match(/\w/g))) {
+                if (i === 0) {
+                  myTmpTxt += 'Fehler: Folgende TextNodes sind nicht erlaubt im HTML-HEAD(incl. HTMLSrc) als direkte ChildNode von HEAD:\n\n';
+                }
+                myTmpTxt += '"' + myNode.nodeValue.replace(/\n/g, ' ').replace(/\s{2,}/g, ' ') + '"\n\n';
+                i++;
+            }
+            myNode = myNode.nextSibling;
+          }
+          document.getElementById('results_box2_txt1').textContent = myTmpTxt;
+          document.getElementById('results_box2_txt1').rows = myTmpTxt.split('\n').length + 2;
+        } else {
+          document.getElementById('results_box2_txt1').textContent = 'Keine unerlaubten Tags für HTML-HEAD gefunden, soweit scheint alles OK!';
+        }
+        myTmpTxt = '';
+        if (notAllowedTagsInHTMLSrc.length > 0) {
+          for (i = 0; i < notAllowedTagsInHTMLSrc.length; i++) {
+            if (notAllowedTagsInHTMLSrc[i].innerHTML.length > 2) {
+              myTmpTxt += notAllowedTagsInHTMLSrc[i].outerHTML.replace(notAllowedTagsInHTMLSrc[i].innerHTML, '...').replace(' xmlns="http://www.w3.org/1999/xhtml"', '') + '\n\n';
+            } else {
+              myTmpTxt += notAllowedTagsInHTMLSrc[i].outerHTML.replace(' xmlns="http://www.w3.org/1999/xhtml"', '') + '\n\n';
+            }
+          }
+          document.getElementById('results_box3a_txt1').textContent ='Fehler: Folgende Tags sind speziell im HTMLSrc nicht erlaubt, da sie bereits vom System im HTML-HEAD gesetzt werden:\n\n' + myTmpTxt;
+          document.getElementById('results_box3a_txt1').rows = myTmpTxt.split('\n').length + 2;
+        } else {
+          document.getElementById('results_box3a_txt1').textContent = 'Keine weiteren unerlaubten Tags für den HTMLSrc gefunden, soweit scheint alles OK!';
+        }
+        var metaHTMLSrc = doc.querySelectorAll('meta');
+        myTmpTxt = '';
+        var tmpMetas;
+        var tmpMetaNameChecked = [];
+        if (metaHTMLSrc.length > 0) {
+          for (i = 0; i < metaHTMLSrc.length; i++) {
+            if (metaHTMLSrc[i].getAttribute('name')) {
+              tmpMetas = doc.querySelectorAll('meta[name="' + metaHTMLSrc[i].getAttribute('name') + '"]');
+              if ((tmpMetas.length > 1) && (tmpMetaNameChecked.indexOf(metaHTMLSrc[i].getAttribute('name')) < 0)) {
+                tmpMetaNameChecked.push(metaHTMLSrc[i].getAttribute('name'));
+                myTmpTxt += '\n';
+                for (ii = 0; ii < tmpMetas.length; ii++) {
+                  myTmpTxt += tmpMetas[ii].outerHTML.replace(tmpMetas[ii].innerHTML, '') + '\n';
+                }
+              }
+            }
+          }
+          if (myTmpTxt.length > 0) {
+            document.getElementById('results_box3_txt1').textContent = 'Fehler: Folgende METAs sind doppelt innerhalb des HTMLSrc:\n' + myTmpTxt;
+          } else {
+            document.getElementById('results_box3_txt1').textContent = 'Keine doppelten METAS innerhalb des HTMLSrc gefunden, soweit scheint alles OK!';
+          }
+          document.getElementById('results_box3_txt1').rows = myTmpTxt.split('\n').length + 2;
+        } else {
+          document.getElementById('results_box3_txt1').textContent = 'Keine doppelten METAS innerhalb des HTMLSrc gefunden, soweit scheint alles OK!';
+        }
+        myHTMLDOM = new DOMParser().parseFromString("<html><head>" + myHTMLSrcTxt + "</head><" + myBody + "></" + myBody + "></html>", "text/html");
+        if (myHTMLDOM.body.innerHTML.length > 0) {
+          document.getElementById('results_box1_txt1').textContent = 'Fehler: Im HTMLSrc befinden sich für den HTML-HEAD nicht erlaubte Tags (oder im HTMLSrc ist eine korrupte HTML-Struktur hinterlegt)!';
+        } else {
+          if ((myHTMLDOM.documentElement.innerHTML.split('<' + myBody + '></' + myBody + '>').length === 2) && (myHTMLDOM.documentElement.innerHTML.split('<' + myBody + '></' + myBody + '>')[1] === '')) {
+            document.getElementById('results_box1_txt1').textContent = 'HTMLSrc scheint rein strukturell OK!';
+          } else {
+            document.getElementById('results_box1_txt1').textContent = 'Fehler: Im HTMLSrc ist eine korrupte HTML-Struktur hinterlegt)!';
+          }
+        }
+      }
+
+      function startNewURL() {
+        if (!(MeinFenster)) {
+          FensterOeffnen(document.getElementById('form1_url').value);
+        }
+      }
+      function FensterOeffnen(myAdress) {
+        //MeinFenster = window.open(myAdress, "Zweitfenster", "toolbar=no, menubar=no, titlebar=yes, scrollbars=yes, status=yes location=yes resizable=yes, top=1, left=1, width=800, height=600");
+        /* window.open(URL,name,specs,replace)....specs:
+channelmode=yes|no|1|0 Whether or not to display the window in theater mode. Default is no. IE only 
+directories=yes|no|1|0 Obsolete. Whether or not to add directory buttons. Default is yes. IE only
+fullscreen=yes|no|1|0 Whether or not to display the browser in full-screen mode. Default is no. A window in full-screen mode must also be in theater mode. IE only
+height=pixels The height of the window. Min. value is 100
+left=pixels The left position of the window. Negative values not allowed
+location=yes|no|1|0 Whether or not to display the address field. Opera only
+menubar=yes|no|1|0 Whether or not to display the menu bar
+resizable=yes|no|1|0 Whether or not the window is resizable. IE only
+scrollbars=yes|no|1|0 Whether or not to display scroll bars. IE, Firefox & Opera only
+status=yes|no|1|0 Whether or not to add a status bar
+titlebar=yes|no|1|0 Whether or not to display the title bar. Ignored unless the calling application is an HTML Application or a trusted dialog box
+toolbar=yes|no|1|0 Whether or not to display the browser toolbar. IE and Firefox only
+top=pixels The top position of the window. Negative values not allowed
+width=pixels
+*/
+        //MeinFenster.onload = MeinFenster_onload;
+        loadXMLDoc(myAdress);
+        //parent.focus();
+      }
+      // (MeinFenster.document.readyState === "complete")
+      // new XMLSerializer().serializeToString(document)
+      // 
+      // new XMLSerializer().serializeToString(new DOMParser().parseFromString("<html><head><html><head></head><" + myBody + "></" + myBody + "></html></head><" + myBody + "></" + myBody + "></html>", "text/html"))
+      // onclick="dv.edit.setValue(new XMLSerializer().serializeToString(new DOMParser().parseFromString(dv.rightOriginal().getValue())));"
+      function MeinFenster_onload() {
+        parent.focus();
+        setDOMCode();
+      }
+      function miniEditor(myEditor) {
+        myEditor.setValue(miniText(myEditor.getValue()));
+      }
+      function miniText(myTxt) {
+        myTxt = myTxt.replace(/(\r\n)/g, '\n');
+        myTxt = myTxt.replace(/\r/g, '\n');
+        myTxt = myTxt.replace(/[\f\t\v]/g, ' ');
+        myTxt = myTxt.replace(/ {2,}/g, ' ');
+        myTxt = myTxt.replace(/( \n){2,}/g, '\n');
+        myTxt = myTxt.replace(/\n{2,}/g, '\n');
+        return myTxt;
+        /* ?\a ⇒ 7 ; control-g, C-g */
+        /* ?\b ⇒ 8 ; backspace, BS, C-h */
+        /* ?\t ⇒ 9 ; tab, TAB, C-i */
+        /* ?\n ⇒ 10 ; newline, C-j */
+        /* ?\v ⇒ 11 ; vertical tab, C-k */
+        /* ?\f ⇒ 12 ; formfeed character, C-l */
+        /* ?\r ⇒ 13 ; carriage return, RET, C-m */
+        /* ?\e ⇒ 27 ; escape character, ESC, C-[ */
+        /* ?\s ⇒ 32 ; space character, SPC */
+        /* ?\\ ⇒ 92 ; backslash character, \ */
+        /* ?\d ⇒ 127 ; delete character, DEL */
+      }
+
+      function handleFileSelect(evt) {
+        var i, f, reader;
+        var files = evt.target.files; // FileList object
+        // Loop through the FileList and render image files as thumbnails.
+        for (i = 0; f = files[i]; i++) {
+          // Only process image files.
+          if (f.type === 'text/html') {
+          } else if (f.type === 'text/css') {
+          } else if (f.type === 'application/x-javascript') {
+          } else if (f.type === 'application/json') {
+          } else if (f.type === 'image/svg+xml') {
+          } else if (f.type.match('image.*')) {
+            continue;
+          } else {
+            continue;
+          }
+          reader = new FileReader();
+          // Closure to capture the file information.
+          reader.onload = (function(theFile) {
+            return function(e) {
+              // q_list.innerHTML = ["<span><img onload='changePhoto(this)' onclick='changePhoto(this); return false' class='thumb' src='", e.target.result, "' title='", escape(theFile.name), "'/><\/span>"].join("");
+              // alert(e.target.result);
+              // alert(escape(theFile.name));
+              document.getElementById('myFileInfo').innerHTML = 'LastModifiedDate: ' + theFile.lastModifiedDate + '\nSize: ' + theFile.size + '\nType: ' + theFile.type;
+              setSourceCode(e.target.result, theFile.type);
+              document.getElementById('box_editor1preview').onload = function() {setDOMCode();};
+            };
+          })(f);
+          // reader.readAsDataURL(f); // Read in the image file as a data URL.
+          reader.readAsText(f);
+        }
+      }
+      // document.getElementById('files').addEventListener('change', handleFileSelect, false);
+      function handleFileSelect_URL(myValue) {
+        if (myValue.length > 4) {
+          // var myImage = new Image();
+          // myImage.onload = doFileSelect_URL;
+          // myImage.onerror = errFileSelect_URL;
+          // myImage.src = myValue;
+          doFileSelect_URL();
+        } else {
+          if (myValue.length > 0) {
+            errFileSelect_URL();
+          } else {
+            document.getElementById('form1_url').style.backgroundColor = "";
+            // q_list.firstElementChild.firstElementChild.src = "./puzzle_images/" + aImages[zImage];
+            doFileSelect_URL();
+          }
+        }
+      }
+      function doFileSelect_URL() {
+        document.getElementById('form1_url').style.backgroundColor = "honeydew";
+        // q_list.firstElementChild.firstElementChild.src = document.getElementById('form1_url').value;
+      }
+      function errFileSelect_URL() {
+        document.getElementById('form1_url').style.backgroundColor = "rgb(255, 234, 237)";
+      }
+
+      function setDOMCode() {
+        var myWin, myDoc;
+        //if (MeinFenster && MeinFenster.document) {
+        if (false) {
+          myWin = MeinFenster;
+          myDoc = MeinFenster.document;
+        } else {
+          myWin = document.getElementById('box_editor1preview').contentWindow;
+          myDoc = document.getElementById('box_editor1preview').contentDocument || document.getElementById('box_editor1preview').contentWindow.document;
+        }
+        document.getElementById('results_box1_txt1').textContent = 
+          "document.readyState: " + myDoc.readyState + "\n" +
+          "status: " + myWin.status + "\n" +
+          "applicationCache.status: " + myWin.applicationCache.status + "\n" +
+          "document.doctype.name: " + myDoc.doctype.name + "\n" +
+          "document.documentElement.nodeName: " + myDoc.documentElement.nodeName + "\n" +
+          "document.documentElement.children: " + [].map.call(myDoc.documentElement.children, function(node){return (node.nodeName + " ") || "";}).join("") + "\n" +
+          "document.title: " + myDoc.title + "\n" +
+          "document.charset: " + myDoc.charset + "\n" +
+          "document.compatMode: " + myDoc.compatMode + "\n" +
+          "document.designMode: " + myDoc.designMode + "\n" +
+          "document.dir: " + myDoc.dir + "\n" +
+          "document.defaultCharset: " + myDoc.defaultCharset + "\n" +
+          "document.activeElement: <" + myDoc.activeElement.tagName + [].map.call(myDoc.activeElement.attributes, function(item){return (" " + item.nodeName + "=" + item.value) || "";}).join("") + ">\n" +
+          "document.currentScript: " + myDoc.currentScript + "\n" +
+          "document.hasFocus(): " + myDoc.hasFocus() + "\n" +
+          "document.hasChildNodes(): " + myDoc.hasChildNodes() + "\n" +
+          "document.implementation.hasFeature(): " + myDoc.implementation.hasFeature() + "\n" +
+          "document.isSupported(): " + myDoc.isSupported() + "\n" +
+          "document.documentURI: " + myDoc.documentURI + "\n" +
+          "document.URL: " + myDoc.URL + "\n" +
+          "document.domain: " + myDoc.domain + "\n" +
+          "document.baseURI: " + myDoc.baseURI + "\n" +
+          "document.documentElement.innerHTML.length: " + myDoc.documentElement.innerHTML.length + "\n" +
+          "document.head.innerHTML.length: " + myDoc.head.innerHTML.length + "\n" +
+          "document.body.innerHTML.length: " + myDoc.body.innerHTML.length + "\n" +
+          "document.querySelectorAll('title').length: " + myDoc.querySelectorAll('title').length + "\n" +
+          "document.querySelectorAll('style').length: " + myDoc.querySelectorAll('style').length + "\n" +
+          "document.querySelectorAll('meta').length: " + myDoc.querySelectorAll('meta').length + "\n" +
+          "document.querySelectorAll('link').length: " + myDoc.querySelectorAll('link').length + "\n" +
+          "document.querySelectorAll('script').length: " + myDoc.querySelectorAll('script').length + "\n" +
+          "document.querySelectorAll('base').length: " + myDoc.querySelectorAll('base').length + "\n" +
+          "document.head.querySelectorAll('*:not(title):not(style):not(meta):not(link):not(script):not(base)').length: " + myDoc.head.querySelectorAll('*:not(title):not(style):not(meta):not(link):not(script):not(base)').length + "\n" +
+          "====== ENDE ======";
+        document.getElementById('results_box2_txt1').textContent = new XMLSerializer().serializeToString(myDoc);
+        //editor1.setValue(document.getElementById('results_box2_txt1').textContent);
+        //dv.edit.setValue(document.getElementById('results_box2_txt1').textContent);
+      }
+
+      function doCheck() {
+var responseTxt, startHTMLSrc, endHTMLSrc, txtHTMLSrc, myHTMLDOM, notAllowedInHTMLSrc, tmpTxt, i, ii, metaHTMLSrc, tmpMetas, tmpMetaNameChecked;
+var myShopAdress = document.getElementById('form1_url').value;
+document.getElementById('results_box1_txt1').textContent = '';
+document.getElementById('results_box2_txt1').textContent = '';
+document.getElementById('results_box3a_txt1').textContent = '';
+document.getElementById('results_box3_txt1').textContent = '';
+var xhr = new XMLHttpRequest();
+xhr.open("GET", myShopAdress, true);
+xhr.withCredentials = true;
+//xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+xhr.onreadystatechange = function () {
+  if (xhr.readyState != 4 || xhr.status != 200) return;
+  responseTxt = xhr.responseText;
+  startHTMLSrc = responseTxt.indexOf('<!-- Begin: HTML Head area -->');
+  endHTMLSrc = responseTxt.indexOf('<!-- End: HTML Head area -->');
+  txtHTMLSrc = responseTxt.substring(startHTMLSrc, endHTMLSrc);
+  myHTMLDOM = new DOMParser().parseFromString("<html><head>" + txtHTMLSrc  + "</head><" + myBody + "></" + myBody + "></html>", "text/html");
+  if (myHTMLDOM.body.innerHTML.length > 0) {
+    document.getElementById('results_box1_txt1').textContent = 'Fehler: Im HTMLSrc befinden sich für den HTML-HEAD nicht erlaubte Tags (oder im HTMLSrc ist eine korrupte HTML-Struktur hinterlegt)!';
+  } else {
+    document.getElementById('results_box1_txt1').textContent = 'HTMLSrc scheint rein strukturell OK (enthält also nur erlaubte Tags für den HTML-HEAD)!';
+  }
+  notAllowedInHTMLSrc = myHTMLDOM.querySelectorAll(':not(html):not(head):not(body):not(meta):not(script):not(style):not(noscript):not(link)');
+  tmpTxt = '';
+  if (notAllowedInHTMLSrc.length > 0) {
+    for (i = 0; i < notAllowedInHTMLSrc.length; i++) {
+      //tmpTxt += new XMLSerializer().serializeToString(notAllowedInHTMLSrc[i]).replace(' xmlns="http://www.w3.org/1999/xhtml"', '') + '\n\n';
+      if (notAllowedInHTMLSrc[i].innerHTML.length > 2) {
+        tmpTxt += notAllowedInHTMLSrc[i].outerHTML.replace(notAllowedInHTMLSrc[i].innerHTML, '...').replace(' xmlns="http://www.w3.org/1999/xhtml"', '') + '\n\n';
+      } else {
+        tmpTxt += notAllowedInHTMLSrc[i].outerHTML.replace(' xmlns="http://www.w3.org/1999/xhtml"', '') + '\n\n';
+      }
+    }
+    document.getElementById('results_box2_txt1').textContent ='Folgende Tags sind nicht erlaubt im HTMLSrc:\n\n' + tmpTxt;
+    document.getElementById('results_box2_txt1').rows = tmpTxt.split('\n').length + 2;
+  } else {
+    document.getElementById('results_box2_txt1').textContent = 'Keine unerlaubten Tags für HTMLSrc gefunden, soweit scheint alles OK!';
+  }
+  metaHTMLSrc = myHTMLDOM.querySelectorAll('meta');
+  tmpTxt = '';
+  tmpMetaNameChecked = [];
+  if (metaHTMLSrc.length > 0) {
+    for (i = 0; i < metaHTMLSrc.length; i++) {
+      if (metaHTMLSrc[i].name) {
+        //myDoc = document.getElementById('box_editor1preview').contentDocument || document.getElementById('box_editor1preview').contentWindow.document;
+        myDoc = new DOMParser().parseFromString(responseTxt, "text/html");
+        tmpMetas = myDoc.querySelectorAll('meta[name="' + metaHTMLSrc[i].name + '"]');
+        if ((tmpMetas.length > 1) && (tmpMetaNameChecked.indexOf(metaHTMLSrc[i].name) < 0)) {
+          tmpMetaNameChecked.push(metaHTMLSrc[i].name);
+          tmpTxt += '\n';
+          for (ii = 0; ii < tmpMetas.length; ii++) {
+            tmpTxt += new XMLSerializer().serializeToString(tmpMetas[ii]).replace(' xmlns="http://www.w3.org/1999/xhtml"', '') + '\n';
+          }
+        }
+      }
+    }
+    if (tmpTxt.length > 0) {
+      document.getElementById('results_box3a_txt1').textContent = 'Folgende METAs sind doppelt(im HTMLSrc sollten nur METAs sein welche noch NICHT vom shop-system automatisch gesetzt werden):\n' + tmpTxt;
+    } else {
+      document.getElementById('results_box3a_txt1').textContent = 'Keine doppelten METAS für HTMLSrc gefunden, soweit scheint alles OK!';
+    }
+    document.getElementById('results_box3a_txt1').rows = tmpTxt.split('\n').length + 2;
+  } else {
+    document.getElementById('results_box3a_txt1').textContent = 'Keine METAS im HTMLSrc gefunden, soweit scheint alles OK!';
+  }
+};
+xhr.send("");
+}
+
+      function setSourceCode(myTxt, myType, isHTMLSrc, myPartType) {
+        if ((!(myPartType)) || (typeof myPartType !== 'string')) myPartType = '';
+        //document.getElementById('results_box3_txt1').textContent = myTxt;
+        if (myType === 'text/css') {
+          if (document.getElementById('box_editorsMerge').style.display === 'none') {
+            document.getElementById('box_editorsMerge').style.display = 'block';
+            document.getElementById('h3_editorsMerge').classList.remove('h3closed');
+          }
+          if (document.getElementById('box_editor2').style.display === 'none') {
+            document.getElementById('box_editor2').style.display = 'block';
+            document.getElementById('h3_editor2').classList.remove('h3closed');
+          }
+          dv.rightOriginal().setValue('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Test-CSS<\/title><style type="text/css">' + myTxt + '<\/style><\/head><' + myBody + '><h1>Test-CSS<\/h1><\/' + myBody + '><\/html>');
+          editor2.setValue(myTxt);
+        } else if (myType === 'application/x-javascript') {
+          if(document.getElementById('box_editorsMerge').style.display === 'none') {
+            document.getElementById('box_editorsMerge').style.display = 'block';
+            document.getElementById('h3_editorsMerge').classList.remove('h3closed');
+          }
+          if (document.getElementById('box_editor3').style.display === 'none') {
+            document.getElementById('box_editor3').style.display = 'block';
+            document.getElementById('h3_editor3').classList.remove('h3closed');
+          }
+          dv.rightOriginal().setValue('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Test-JS<\/title><script type="text/javascript">' + myTxt + '<\/script><\/head><' + myBody + '><h1>Test-JS<\/h1><\/' + myBody + '><\/html>');
+          editor3.setValue(myTxt);
+        } else if (myType === 'application/json') {
+          if(document.getElementById('box_editorsMerge').style.display === 'none') {
+            document.getElementById('box_editorsMerge').style.display = 'block';
+            document.getElementById('h3_editorsMerge').classList.remove('h3closed');
+          }
+          if (document.getElementById('box_editor4').style.display === 'none') {
+            document.getElementById('box_editor4').style.display = 'block';
+            document.getElementById('h3_editor4').classList.remove('h3closed');
+          }
+          dv.rightOriginal().setValue('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Test-JS<\/title><\/head><' + myBody + '><pre style="word-wrap: break-word; white-space: pre-wrap;">' + myTxt + '<\/pre><\/' + myBody + '><\/html>');
+          editor4.setValue(myTxt);
+        } else {
+          if (document.getElementById('box_editorsMerge').style.display === 'none') {
+            document.getElementById('box_editorsMerge').style.display = 'block';
+            document.getElementById('h3_editorsMerge').classList.remove('h3closed');
+          }
+          if (document.getElementById('box_editor1').style.display === 'none') {
+            document.getElementById('box_editor1').style.display = 'block';
+            document.getElementById('box_editor1preview').style.display = 'block';
+            document.getElementById('h3_editor1').classList.remove('h3closed');
+          }
+          if (isHTMLSrc === true) {
+            if (myPartType === 'BODY') {
+              if (document.getElementById('form1_url').value.length > 3) {
+                myTxt = '<!DOCTYPE html>\n<html><head><base href="' + document.getElementById('form1_url').value + '">\n<!-- Begin: HTML Head area -->\n\n<!-- End: HTML Head area -->\n</head>\n<' + myBody + '>\n' + myTxt + '</' + myBody + '></html>';
+              } else {
+                myTxt = '<!DOCTYPE html>\n<html><head>\n<!-- Begin: HTML Head area -->\n\n<!-- End: HTML Head area -->\n</head>\n<' + myBody + '>\n' + myTxt + '</' + myBody + '></html>';
+              }
+            } else if (myPartType === 'HTML') {
+              /* ignore */
+            } else {
+              /* HEAD */
+              if (document.getElementById('form1_url').value.length > 3) {
+                myTxt = '<!DOCTYPE html>\n<html><head><base href="' + document.getElementById('form1_url').value + '">\n<!-- Begin: HTML Head area -->\n' + myTxt + '\n<!-- End: HTML Head area -->\n</head>\n<' + myBody + '>\n<h1>PlatzhalterFürSichtbarenInhalt/BODY</h1></' + myBody + '></html>';
+              } else {
+                myTxt = '<!DOCTYPE html>\n<html><head>\n<!-- Begin: HTML Head area -->\n' + myTxt + '\n<!-- End: HTML Head area -->\n</head>\n<' + myBody + '>\n<h1>PlatzhalterFürSichtbarenInhalt/BODY</h1></' + myBody + '></html>';
+              }
+            }
+
+            myHTMLDOM = new DOMParser().parseFromString(myTxt, "text/html");
+            dv.edit.setValue("<!DOCTYPE html>\n" + myHTMLDOM.documentElement.outerHTML);
+            dv.rightOriginal().setValue(myTxt);
+            editor1.setValue(myTxt);
+          } else {
+          var startHTMLSrc = myTxt.indexOf('<!-- Begin: HTML Head area -->');
+          var endHTMLSrc = myTxt.indexOf('<!-- End: HTML Head area -->');
+          var myHTMLDOM;
+          if ((startHTMLSrc > 0) && (endHTMLSrc > 0)) {
+            myHTMLDOM = new DOMParser().parseFromString(myTxt, "text/html");
+            myTxt = "<!DOCTYPE html>\n<html><head>" + myHTMLDOM.querySelectorAll('base')[0].outerHTML + "\n" + myTxt.substring(startHTMLSrc, endHTMLSrc)  + "\n</head>\n<" + myBody + ">\n<h1>PlatzhalterFürSichtbarenInhalt/BODY</h1>\n</" + myBody + ">\n</html>";
+            myHTMLDOM = new DOMParser().parseFromString(myTxt, "text/html");
+            dv.edit.setValue("<!DOCTYPE html>\n" + myHTMLDOM.documentElement.outerHTML);
+          } else {
+            myTxt = "<!DOCTYPE html>\n<html><head><!-- NOT FOUND: User-defined HTML Head area -->\n</head>\n<" + myBody + ">\n<h1>PlatzhalterFürSichtbarenInhalt/BODY</h1>\n</" + myBody + ">\n</html>";
+            myHTMLDOM = new DOMParser().parseFromString(myTxt, "text/html");
+            dv.edit.setValue("<!DOCTYPE html>\n" + myHTMLDOM.documentElement.outerHTML);
+          }
+          dv.rightOriginal().setValue(myTxt);
+          editor1.setValue(myTxt);
+          }
+        }
+
+        window.setTimeout(getAllStyles, 4000);
+        window.setTimeout(getAllJavascripts, 4000);
+        //window.setTimeout('doCheck()', 55);
+        window.setTimeout('getAllStyles(editor2)', 5000);
+        window.setTimeout('getAllJavascripts(editor3)', 5000);
+      }
+
+      function loadXMLDoc(myAdress) {
+        if (window.XMLHttpRequest) {
+          // code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp = new XMLHttpRequest();
+        } else {
+          // code for IE6, IE5
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+            setSourceCode(xmlhttp.responseText, 'text/html');
+          }
+        };
+        xmlhttp.open("GET", myAdress, true);
+        xmlhttp.withCredentials = true;
+        xmlhttp.send();
+      }
+
+      function myHTTPrequest(myAdress, myEditor) {
+        var myResult, myI;
+        if (window.XMLHttpRequest) {
+          // code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp = new XMLHttpRequest();
+        } else {
+          // code for IE6, IE5
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+            // alert(xmlhttp.responseText);
+            // alert(myEditor);
+            myEditor.setValue(myEditor.getValue() + xmlhttp.responseText);
+          }
+        };
+        xmlhttp.open("GET", myAdress, true);
+        xmlhttp.withCredentials = true;
+        xmlhttp.send();
+      }
+
+      function getAllStyles(myEditor, myStart, myEnd) {
+        var myI, myII, myDoc, mysheet, myrules, myResult, vGetSel2, newOp;
+        if (!(myStart)) {
+          myStart = 0;
+        }
+        myResult = "";
+        //if (MeinFenster && MeinFenster.document) {
+        if (false) {
+          myDoc = MeinFenster.document;
+        } else {
+          myDoc = document.getElementById('box_editor1preview').contentDocument || document.getElementById('box_editor1preview').contentWindow.document;
+        }
+        if (myEditor) {
+          myEditor.setValue(myResult);
+          if (!(myEnd)) {
+            myEnd = myDoc.styleSheets.length;
+          }
+          for (myI = myStart; myI < myEnd; myI++) {
+            myResult += '\n' + '/*===== ' + (myI+1) + '.) ' + myDoc.styleSheets[myI].href + ' ||mediaText: ' + myDoc.styleSheets[myI].media.mediaText + ' =====*/' + '\n';
+            mysheet = myDoc.styleSheets[myI];
+            if (myDoc.styleSheets[myI].href) {
+              if ((myDoc.styleSheets[myI].href.substring(0, 7)) === "file://") {
+                document.getElementById('testFrame').src = myDoc.styleSheets[myI].href;
+                document.getElementById('testFrame').onload = function() {
+                  myEditor.setValue(myEditor.getValue() + document.getElementById('testFrame').contentDocument.firstChild.textContent);
+                };
+              } else {
+                myHTTPrequest(myDoc.styleSheets[myI].href, myEditor);
+              }
+            } else {
+              myResult += mysheet.ownerNode.innerHTML;
+            }
+            // myrules = mysheet.cssRules ? mysheet.cssRules: mysheet.rules;
+            // if (myrules) {
+              // for (myII = 0; myII < myrules.length; myII++) {
+                // myResult += myrules[myII].cssText + '\n';
+              // }
+            // }
+          }
+          myEditor.setValue(myEditor.getValue() + myResult);
+        } else {
+          vGetSel2 = document.getElementById('myGetSel2');
+          vGetSel2.innerHTML = '<option value="placeholder">Stylesheets</option><option value="ALL">GetAllStyleSheets</option>';
+          newOp = null;
+          for (myI = 0; myI < myDoc.styleSheets.length; myI++) {
+            newOp = document.createElement('option');
+            newOp.setAttribute('value', myI + '');
+            vGetSel2.appendChild(newOp);
+            if (myDoc.styleSheets[myI].href) {
+              newOp.innerHTML = '' + (myI+1) + '| ' + myDoc.styleSheets[myI].href;
+            } else {
+              newOp.innerHTML = '' + (myI+1) + '| ' + myDoc.styleSheets[myI].ownerNode.nodeName + ((myDoc.styleSheets[myI].ownerNode.id.length > 0) ? ('#' + myDoc.styleSheets[myI].ownerNode.id) : '');
+            }
+          }
+        }
+      }
+
+      function getMyStylesheet(myEditor, mySel) {
+        if (mySel.value === "placeholder") {
+          // ignore
+        } else if (mySel.value === "ALL") {
+          getAllStyles(myEditor);
+        } else {
+          getAllStyles(myEditor, parseInt(mySel.value, 10), (parseInt(mySel.value, 10) + 1));
+        }
+      }
+
+      function getAllJavascripts(myEditor, myStart, myEnd) {
+        var myI, myII, myDoc, myscript, myResult, vGetSel3, newOp;
+        if (!(myStart)) {
+          myStart = 0;
+        }
+        myResult = "";
+        //if (MeinFenster && MeinFenster.document) {
+        if (false) {
+          myDoc = MeinFenster.document;
+        } else {
+          myDoc = document.getElementById('box_editor1preview').contentDocument || document.getElementById('box_editor1preview').contentWindow.document;
+        }
+        if (myEditor) {
+          myEditor.setValue(myResult);
+          if (!(myEnd)) {
+            myEnd = myDoc.scripts.length;
+          }
+          for (myI = myStart; myI < myEnd; myI++) {
+            myResult += '\n' + '/*===== ' + (myI+1) + '.) ' + myDoc.scripts[myI].src + ' =====*/' + '\n';
+            myscript = myDoc.scripts[myI];
+            if (myDoc.scripts[myI].src) {
+              if ((myDoc.scripts[myI].src.substring(0, 7)) === "file://") {
+                document.getElementById('testFrame').src = myDoc.scripts[myI].src;
+                document.getElementById('testFrame').onload = function() {
+                  myEditor.setValue(myEditor.getValue() + document.getElementById('testFrame').contentDocument.firstChild.textContent);
+                };
+              } else {
+                myHTTPrequest(myDoc.scripts[myI].src, myEditor);
+              }
+            } else {
+              myResult += myscript.textContent;
+            }
+          }
+          myEditor.setValue(myEditor.getValue() + myResult);
+        } else {
+          vGetSel3 = document.getElementById('myGetSel3');
+          vGetSel3.innerHTML = '<option value="placeholder">Javascripts</option><option value="ALL">GetAllJavaScripts</option>';
+          newOp = null;
+          for (myI = 0; myI < myDoc.scripts.length; myI++) {
+            newOp = document.createElement('option');
+            newOp.setAttribute('value', myI + '');
+            vGetSel3.appendChild(newOp);
+            if (myDoc.scripts[myI].src) {
+              newOp.innerHTML = '' + (myI+1) + '| ' + myDoc.scripts[myI].src;
+            } else {
+              newOp.innerHTML = '' + (myI+1) + '| ' + miniText(myDoc.scripts[myI].textContent.substring(0, 80)).replace(/\n/g, '').replace(/\</g, '&lt;').replace(/\>/g, '&gt;') + ((myDoc.scripts[myI].id.length > 0) ? ('#' + myDoc.scripts[myI].id) : '');
+            }
+          }
+        }
+      }
+
+      function getMyJavascript(myEditor, mySel) {
+        if (mySel.value === "placeholder") {
+          // ignore
+        } else if (mySel.value === "ALL") {
+          getAllJavascripts(myEditor);
+        } else {
+          getAllJavascripts(myEditor, parseInt(mySel.value, 10), (parseInt(mySel.value, 10) + 1));
+        }
+      }
+
+      function getAllLintMess(myEditor) {
+        var myI, myResult, mySeverity;
+        myResult = "";
+        for (myI = 0; myI < myEditor.getAllMarks().length; myI++) {
+          if (myEditor.getAllMarks()[myI].__annotation.severity) {
+            mySeverity = "[" + myEditor.getAllMarks()[myI].__annotation.severity[0].toUpperCase() + myEditor.getAllMarks()[myI].__annotation.severity.substring(1) + "]" + "[(" + (myEditor.getAllMarks()[myI].__annotation.from.line + 1) + "," + (myEditor.getAllMarks()[myI].__annotation.from.ch + 1) + ")(" + (myEditor.getAllMarks()[myI].__annotation.to.line + 1) + "," + (myEditor.getAllMarks()[myI].__annotation.to.ch + 1) + ")] ";
+          } else {
+            mySeverity = "";
+          }
+          myResult += mySeverity + myEditor.getAllMarks()[myI].__annotation.message + " [source] " + myEditor.getAllMarks()[myI].lines[0].text + "\n\n";
+        }
+        return myResult;
+      }
+
+      function myStart1() {
+        var myI, myEls;
+        myEls = document.getElementsByClassName('cDefaultClosed');
+        for (myI = 0; myI < myEls.length; myI++) {
+          if ((myEls[myI].id === 'box_editor2') && ((document.documentElement.classList.contains('is_onlycss')) || (document.documentElement.classList.contains('is_onlycssmerge')) || (document.documentElement.classList.contains('is_onlycsshtml')))) {
+          } else if ((myEls[myI].id === 'box_editor3') && (document.documentElement.classList.contains('is_onlyjs'))) {
+          } else if ((myEls[myI].id === 'box_editor4') && (document.documentElement.classList.contains('is_onlyjson'))) {
+          } else if ((myEls[myI].id === 'box_editorsMerge') && ((document.documentElement.classList.contains('is_onlymerge')) || (document.documentElement.classList.contains('is_onlycssmerge')))) {
+          } else if ((myEls[myI].id === 'box_editor1') && ((document.documentElement.classList.contains('is_onlyhtml')) || (document.documentElement.classList.contains('is_onlycsshtml')))) {
+          } else if ((myEls[myI].id === 'box_editor1preview') && (document.documentElement.classList.contains('is_onlypreview'))) {
+          } else {
+            myEls[myI].style.display = 'none';
+          }
+        }
+        myEls = document.getElementsByClassName('h3opened');
+        for (myI = (myEls.length-1); myI >= 0; myI--) {
+          if ((myEls[myI].id === 'h3_editor2') && ((document.documentElement.classList.contains('is_onlycss')) || (document.documentElement.classList.contains('is_onlycssmerge')) || (document.documentElement.classList.contains('is_onlycsshtml')))) {
+          } else if ((myEls[myI].id === 'h3_editor3') && (document.documentElement.classList.contains('is_onlyjs'))) {
+          } else if ((myEls[myI].id === 'h3_editor4') && (document.documentElement.classList.contains('is_onlyjson'))) {
+          } else if ((myEls[myI].id === 'h3_editorsMerge') && ((document.documentElement.classList.contains('is_onlymerge')) || (document.documentElement.classList.contains('is_onlycssmerge')))) {
+          } else if ((myEls[myI].id === 'h3_editor1') && ((document.documentElement.classList.contains('is_onlyhtml')) || (document.documentElement.classList.contains('is_onlycsshtml')))) {
+          } else {
+            myEls[myI].classList.add('h3closed');
+            myEls[myI].classList.remove('h3opened');
+          }
+        }
+      }
+      if (window.addEventListener) {
+        window.addEventListener('load', myStart1, false);
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', myStart1);
+      }
+
+      function setMyEditorOpt(myEditor, mySel) {
+        var myI;
+        for (myI = 0; myI < myEditor.length; myI++) {
+          if (mySel.value === 'LWon') {
+            myEditor[myI].setOption('lineWrapping', true);
+          } else if (mySel.value === 'LWoff') {
+            myEditor[myI].setOption('lineWrapping', false);
+          } else if (mySel.value === 'STSon') {
+            myEditor[myI].setOption('showTrailingSpace', true);
+          } else if (mySel.value === 'STSoff') {
+            myEditor[myI].setOption('showTrailingSpace', false);
+          } else if (mySel.value === 'MODEmixed') {
+            myEditor[myI].setOption('mode', mixedMode);
+            myEditor[myI].setOption('matchTags', {bothTags: true});
+            myEditor[myI].setOption('showTrailingSpace', true);
+            myEditor[myI].setOption('selectionPointer', true);
+            myEditor[myI].setOption('styleActiveLine', true);
+            myEditor[myI].setOption('lineNumbers', true);
+            myEditor[myI].setOption('lineWrapping', false);
+            myEditor[myI].setOption('extraKeys', {'Ctrl-Q': function(cm){ cm.foldCode(cm.getCursor()); }, 'Ctrl-Space': 'autocomplete', "Ctrl-J": "toMatchingTag"});
+            myEditor[myI].setOption('foldGutter', true);
+            myEditor[myI].setOption('gutters', ['CodeMirror-linenumbers', 'CodeMirror-foldgutter']);
+            myEditor[myI].setOption('indentUnit', 2);
+            myEditor[myI].setOption('smartIndent', true);
+            myEditor[myI].setOption('indentWithTabs', false);
+            myEditor[myI].setOption('tabSize', 2);
+            myEditor[myI].setOption('scrollbarStyle', 'simple');
+          } else if (mySel.value === 'MODEcss') {
+            myEditor[myI].setOption('mode', 'css');
+            myEditor[myI].setOption('showTrailingSpace', true);
+            myEditor[myI].setOption('styleActiveLine', true);
+            myEditor[myI].setOption('lineNumbers', true);
+            myEditor[myI].setOption('lineWrapping', false);
+            myEditor[myI].setOption('extraKeys', {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }, "Ctrl-Space": "autocomplete"});
+            myEditor[myI].setOption('foldGutter', true);
+            myEditor[myI].setOption('gutters', ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lint-markers"]);
+            myEditor[myI].setOption('indentUnit', 2);
+            myEditor[myI].setOption('smartIndent', true);
+            myEditor[myI].setOption('indentWithTabs', false);
+            myEditor[myI].setOption('tabSize', 2);
+            myEditor[myI].setOption('lint', true);
+            myEditor[myI].setOption('scrollbarStyle', "simple");
+          } else if (mySel.value === 'MODEjs') {
+            myEditor[myI].setOption('mode', {name: 'javascript', globalVars: true});
+            myEditor[myI].setOption('showTrailingSpace', true);
+            myEditor[myI].setOption('styleActiveLine', true);
+            myEditor[myI].setOption('lineNumbers', true);
+            myEditor[myI].setOption('lineWrapping', false);
+            myEditor[myI].setOption('extraKeys', {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }, "Ctrl-Space": "autocomplete"});
+            myEditor[myI].setOption('keyMap', "sublime");
+            myEditor[myI].setOption('matchBrackets', true);
+            myEditor[myI].setOption('foldGutter', true);
+            myEditor[myI].setOption('gutters', ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lint-markers"]);
+            myEditor[myI].setOption('indentUnit', 2);
+            myEditor[myI].setOption('smartIndent', true);
+            myEditor[myI].setOption('indentWithTabs', false);
+            myEditor[myI].setOption('tabSize', 2);
+            myEditor[myI].setOption('electricChars', true);
+            myEditor[myI].setOption('lint', true);
+            myEditor[myI].setOption('scrollbarStyle', "simple");
+          } else if (mySel.value === 'MODEjson') {
+            myEditor[myI].setOption('mode', 'application/json');
+            myEditor[myI].setOption('showTrailingSpace', true);
+            myEditor[myI].setOption('styleActiveLine', true);
+            myEditor[myI].setOption('lineNumbers', true);
+            myEditor[myI].setOption('lineWrapping', false);
+            myEditor[myI].setOption('extraKeys', {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }});
+            myEditor[myI].setOption('foldGutter', true);
+            myEditor[myI].setOption('gutters', ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lint-markers"]);
+            myEditor[myI].setOption('completeSingle', false);
+            myEditor[myI].setOption('indentUnit', 2);
+            myEditor[myI].setOption('smartIndent', true);
+            myEditor[myI].setOption('indentWithTabs', false);
+            myEditor[myI].setOption('tabSize', 2);
+            myEditor[myI].setOption('lint', true);
+            myEditor[myI].setOption('scrollbarStyle', "simple");
+          } else if (mySel.value === 'MODEhtml') {
+            myEditor[myI].setOption('mode', 'text/html');
+            myEditor[myI].setOption('showTrailingSpace', true);
+            myEditor[myI].setOption('selectionPointer', true);
+            myEditor[myI].setOption('styleActiveLine', true);
+            myEditor[myI].setOption('lineNumbers', true);
+            myEditor[myI].setOption('lineWrapping', false);
+            myEditor[myI].setOption('matchTags', {bothTags: true});
+            myEditor[myI].setOption('indentUnit', 2);
+            myEditor[myI].setOption('smartIndent', true);
+            myEditor[myI].setOption('indentWithTabs', false);
+            myEditor[myI].setOption('tabSize', 2);
+            myEditor[myI].setOption('scrollbarStyle', "simple");
+          } else {
+            // ignore
+          }
+        }
+        mySel.options[0].selected = true;
+      }
+
+      function setSpecials(myEditor, mySel) {
+        var myI;
+        for (myI = 0; myI < myEditor.length; myI++) {
+          if (mySel.value === 'MiniLeft') {
+            if (myI === 0) {
+              miniEditor(myEditor[myI]);
+            }
+          } else if (mySel.value === 'MiniRight') {
+            if (myI === 1) {
+              miniEditor(myEditor[myI]);
+            }
+         } else if (mySel.value === 'MiniBoth') {
+            miniEditor(myEditor[myI]);
+         } else if (mySel.value === 'ReparseLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(new XMLSerializer().serializeToString(new DOMParser().parseFromString(myEditor[myI].getValue(), 'text/html')).replace(' xmlns="http://www.w3.org/1999/xhtml"', ''));
+            }
+         } else if (mySel.value === 'ReparseRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(new XMLSerializer().serializeToString(new DOMParser().parseFromString(myEditor[myI].getValue(), 'text/html')).replace(' xmlns="http://www.w3.org/1999/xhtml"', ''));
+            }
+         } else if (mySel.value === 'ReparseBoth') {
+            myEditor[myI].setValue(new XMLSerializer().serializeToString(new DOMParser().parseFromString(myEditor[myI].getValue(), 'text/html')).replace(' xmlns="http://www.w3.org/1999/xhtml"', ''));
+         } else if (mySel.value === 'ReparseLeftToRight') {
+            if (myI === 0) {
+              myEditor[1].setValue(new XMLSerializer().serializeToString(new DOMParser().parseFromString(myEditor[0].getValue(), 'text/html')).replace(' xmlns="http://www.w3.org/1999/xhtml"', ''));
+            }
+         } else if (mySel.value === 'ReparseRightToLeft') {
+            if (myI === 0) {
+              myEditor[0].setValue(new XMLSerializer().serializeToString(new DOMParser().parseFromString(myEditor[1].getValue(), 'text/html')).replace(' xmlns="http://www.w3.org/1999/xhtml"', ''));
+            }
+         } else if (mySel.value === 'insReturnLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(> *<)([a-z!\/])/g, '>\n<$2'));
+            }
+         } else if (mySel.value === 'insReturnRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(> *<)([a-z!\/])/g, '>\n<$2'));
+            }
+         } else if (mySel.value === 'insReturnBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(> *<)([a-z!\/])/g, '>\n<$2'));
+         } else if (mySel.value === 'delStrLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delStrRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delStrBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+         } else if (mySel.value === 'delStyleLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<style\b[^>]*>)([\S\s]*?)(<\/style>)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delStyleRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<style\b[^>]*>)([\S\s]*?)(<\/style>)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delStyleBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<style\b[^>]*>)([\S\s]*?)(<\/style>)/g, '$1$3'));
+         } else if (mySel.value === 'delScriptLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<script\b[^>]*>)([\S\s]*?)(<\/script>)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delScriptRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<script\b[^>]*>)([\S\s]*?)(<\/script>)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delScriptBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<script\b[^>]*>)([\S\s]*?)(<\/script>)/g, '$1$3'));
+         } else if (mySel.value === 'delLinkHRefLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<link.*href=\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delLinkHRefRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<link.*href=\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delLinkHRefBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<link.*href=\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+         } else if (mySel.value === 'delScriptSrcLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<script.*src=\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delScriptSrcRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<script.*src=\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+            }
+         } else if (mySel.value === 'delScriptSrcBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<script.*src=\u0022)([\S ]*?)(\u0022)/g, '$1$3'));
+         } else if (mySel.value === 'delTxtNodesLeft') {
+            if (myI === 0) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<([\w]*?)\b[^>]*>)([^<>][\S\s][^<>]*?)(<\/([\w]*?)>)/g, '$1$4'));
+            }
+         } else if (mySel.value === 'delTxtNodesRight') {
+            if (myI === 1) {
+              myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<([\w]*?)\b[^>]*>)([^<>][\S\s][^<>]*?)(<\/([\w]*?)>)/g, '$1$4'));
+            }
+         } else if (mySel.value === 'delTxtNodesBoth') {
+            myEditor[myI].setValue(myEditor[myI].getValue().replace(/(<([\w]*?)\b[^>]*>)([^<>][\S\s][^<>]*?)(<\/([\w]*?)>)/g, '$1$4'));
+         } else if (mySel.value === 'get_HTML_SourceCode') {
+            var tmpTxtContent = myEditor[myI].getValue();
+            var startHTMLSrc = tmpTxtContent.indexOf('<!-- Begin: HTML Head area -->');
+            var endHTMLSrc = tmpTxtContent.indexOf('<!-- End: HTML Head area -->');
+            var txtHTMLSrc = tmpTxtContent.substring(startHTMLSrc, endHTMLSrc);
+            myEditor[myI].setValue(txtHTMLSrc);
+          } else {
+            // ignore
+          }
+        }
+        mySel.options[0].selected = true;
+      }
+
+      /* ======================= */
+/* autocomplete(editor, getHints, options) */
+/* clearBookmarks(editor) */
+/* clearSearch(editor) */
+/* defaultTab(editor) */
+/* delCharAfter(editor) */
+/* delCharBefore(editor) */
+/* delGroupAfter(editor) */
+/* delGroupBefore(editor) */
+/* delLineLeft(editor) */
+/* delLineRight(editor) */
+/* delWordAfter(editor) */
+/* delWordBefore(editor) */
+/* delWrappedLineLeft(editor) */
+/* delWrappedLineRight(editor) */
+/* deleteLine(editor) */
+/* deleteToSublimeMark(editor) */
+/* downcaseAtCursor(editor) */
+/* duplicateLine(editor) */
+/* find(editor) */
+/* findAllUnder(editor) */
+/* findNext(editor, rev) */
+/* findPrev(editor) */
+/* findUnder(editor) */
+/* findUnderPrevious(editor) */
+/* fold(editor) */
+/* foldAll(editor) */
+/* goCharLeft(editor) */
+/* goCharRight(editor) */
+/* goColumnLeft(editor) */
+/* goColumnRight(editor) */
+/* goDocEnd(editor) */
+/* goDocStart(editor) */
+/* goGroupLeft(editor) */
+/* goGroupRight(editor) */
+/* goLineDown(editor) */
+/* goLineEnd(editor) */
+/* goLineLeft(editor) */
+/* goLineLeftSmart(editor) */
+/* goLineRight(editor) */
+/* goLineStart(editor) */
+/* goLineStartSmart(editor) */
+/* goLineUp(editor) */
+/* goNextDiff(editor) */
+/* goPageDown(editor) */
+/* goPageUp(editor) */
+/* goPrevDiff(editor) */
+/* goSubwordLeft(editor) */
+/* goSubwordRight(editor) */
+/* goToBracket(editor) */
+/* goWordLeft(editor) */
+/* goWordRight(editor) */
+/* indentAuto(editor) */
+/* indentLess(editor) */
+/* indentMore(editor) */
+/* insertLineAfter(editor) */
+/* insertLineBefore(editor) */
+/* insertSoftTab(editor) */
+/* insertTab(editor) */
+/* joinLines(editor) */
+/* killLine(editor) */
+/* newlineAndIndent(editor) */
+/* nextBookmark(editor) */
+/* prevBookmark(editor) */
+/* redo(editor) */
+/* redoSelection(editor) */
+/* replace(editor, all) */
+/* replaceAll(editor) */
+/* scrollLineDown(editor) */
+/* scrollLineUp(editor) */
+/* selectAll(editor) */
+/* selectBetweenBrackets(editor) */
+/* selectBookmarks(editor) */
+/* selectLine(editor) */
+/* selectLinesDownward(editor) */
+/* selectLinesUpward(editor) */
+/* selectNextOccurrence(editor) */
+/* selectScope(editor) */
+/* selectToSublimeMark(editor) */
+/* setSublimeMark(editor) */
+/* showInCenter(editor) */
+/* singleSelection(editor) */
+/* singleSelectionTop(editor) */
+/* smartBackspace(editor) */
+/* sortLines(editor) */
+/* sortLinesInsensitive(editor) */
+/* splitSelectionByLine(editor) */
+/* sublimeYank(editor) */
+/* swapLineDown(editor) */
+/* swapLineUp(editor) */
+/* swapWithSublimeMark(editor) */
+/* toMatchingTag(editor) */
+/* toggleBookmark(editor) */
+/* toggleComment(editor) */
+/* toggleFold(editor) */
+/* toggleOverwrite(editor) */
+/* transposeChars(editor) */
+/* undo(editor) */
+/* undoSelection(editor) */
+/* unfold(editor) */
+/* unfoldAll(editor) */
+/* upcaseAtCursor(editor) */
+/* wrapLines(editor) */
+
+      function commandEditor(myEditorName, myCommand, myP1, myP2) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          CodeMirror.commands[myCommand](editor2, myP1, myP2);
+        } else if (myEditorName === 'js') {
+          CodeMirror.commands[myCommand](editor3, myP1, myP2);
+        } else if (myEditorName === 'json') {
+          CodeMirror.commands[myCommand](editor4, myP1, myP2);
+        } else if (myEditorName === 'mergeleft') {
+          CodeMirror.commands[myCommand](dv.edit, myP1, myP2);
+        } else if (myEditorName === 'mergeright') {
+          CodeMirror.commands[myCommand](dv.rightOriginal(), myP1, myP2);
+        } else if (myEditorName === 'html') {
+          CodeMirror.commands[myCommand](editor1, myP1, myP2);
+        }
+      }
+
+      function optionEditor(myEditorName, myOpt, myP1, myP2, myP3, myP4, myP5) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        if ((!(myOpt)) || (typeof myOpt !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          editor2.setOption(myOpt, myP1, myP2, myP3, myP4, myP5);
+        } else if (myEditorName === 'js') {
+          editor3.setOption(myOpt, myP1, myP2, myP3, myP4, myP5);
+        } else if (myEditorName === 'json') {
+          editor4.setOption(myOpt, myP1, myP2, myP3, myP4, myP5);
+        } else if (myEditorName === 'mergeleft') {
+          dv.edit.setOption(myOpt, myP1, myP2, myP3, myP4, myP5);
+        } else if (myEditorName === 'mergeright') {
+          dv.rightOriginal().setOption(myOpt, myP1, myP2, myP3, myP4, myP5);
+        } else if (myEditorName === 'html') {
+          editor1.setOption(myOpt, myP1, myP2, myP3, myP4, myP5);
+        }
+      }
+
+      function toggleShowHide(mySel) {
+        var myEls, myI, myVal;
+        myEls = document.querySelectorAll(mySel);
+        if (myEls.length<1) return false;
+        myVal = 'none';
+        for (myI = 0; myI < myEls.length; myI++) {
+          if (myI>0) {
+            /* use first val */
+          } else if (myEls[myI].style.display === 'none') {
+            myVal = 'block';
+          } else {
+            myVal = 'none';
+          }
+          myEls[myI].style.display = myVal;
+          if ((myEls[myI].firstElementChild) && (myEls[myI].firstElementChild.classList.contains('h3closed'))) break;
+        }
+      }
+
+      function showBox(myName) {
+        var myEls, myI;
+        if ((!(myName)) || (typeof myName !== 'string')) return false;
+        myName = myName.toLowerCase();
+        if (myName === 'all') {
+          showBox('showhide');
+          showBox('h1');
+          showBox('topform');
+          showBox('headinfo');
+          showBox('css');
+          showBox('js');
+          showBox('json');
+          showBox('merge');
+          showBox('html');
+          showBox('preview');
+        } else if (myName === 'allmin') {
+          showBox('showhide');
+          hideBox('h1');
+          showBox('topform');
+          hideBox('headinfo');
+          showBox('css');
+          showBox('js');
+          showBox('json');
+          showBox('merge');
+          showBox('html');
+          showBox('preview');
+        } else if (myName === 'onlycssmerge') {
+          hideBox('showhide');
+          hideBox('h1');
+          hideBox('topform');
+          hideBox('headinfo');
+          showBox('css');
+          hideBox('js');
+          hideBox('json');
+          showBox('merge');
+          hideBox('html');
+          hideBox('preview');
+        } else if (myName === 'onlycsshtml') {
+          hideBox('showhide');
+          hideBox('h1');
+          hideBox('topform');
+          hideBox('headinfo');
+          showBox('css');
+          hideBox('js');
+          hideBox('json');
+          hideBox('merge');
+          showBox('html');
+          hideBox('preview');
+        } else if (myName === 'onlymerge') {
+          hideBox('showhide');
+          hideBox('h1');
+          hideBox('topform');
+          hideBox('headinfo');
+          hideBox('css');
+          hideBox('js');
+          hideBox('json');
+          showBox('merge');
+          hideBox('html');
+          hideBox('preview');
+        } else if (myName === 'onlyhtml') {
+          hideBox('showhide');
+          hideBox('h1');
+          hideBox('topform');
+          hideBox('headinfo');
+          hideBox('css');
+          hideBox('js');
+          hideBox('json');
+          hideBox('merge');
+          showBox('html');
+          hideBox('preview');
+        } else if (myName === 'showhide') {
+          myEls = document.querySelectorAll('#cont_ShowHide');
+          if (myEls.length > 0) myEls[0].style.display = 'block';
+        } else if (myName === 'h1') {
+          myEls = document.querySelectorAll('#cont_head');
+          if (myEls.length > 0) myEls[0].style.display = 'block';
+        } else if (myName === 'topform') {
+          myEls = document.querySelectorAll('#cont_form');
+          if (myEls.length > 0) myEls[0].style.display = 'block';
+        } else if (myName === 'headinfo') {
+          myEls = document.querySelectorAll('#cont_results');
+          if (myEls.length > 0) myEls[0].style.display = 'block';
+        } else if (myName === 'css') {
+          myEls = document.querySelectorAll('.box_editor2');
+          if (myEls.length > 0) {
+            myEls[0].style.display = 'block';
+            if (myEls.length > 1) {
+              if ((myEls[0].firstElementChild) && (myEls[0].firstElementChild.classList.contains('h3closed'))) {
+                myEls[1].style.display = 'none';
+              } else {
+                myEls[1].style.display = 'block';
+              }
+            }
+          }
+        } else if (myName === 'js') {
+          myEls = document.querySelectorAll('.box_editor3');
+          if (myEls.length > 0) {
+            myEls[0].style.display = 'block';
+            if (myEls.length > 1) {
+              if ((myEls[0].firstElementChild) && (myEls[0].firstElementChild.classList.contains('h3closed'))) {
+                myEls[1].style.display = 'none';
+              } else {
+                myEls[1].style.display = 'block';
+              }
+            }
+          }
+        } else if (myName === 'json') {
+          myEls = document.querySelectorAll('.box_editor4');
+          if (myEls.length > 0) {
+            myEls[0].style.display = 'block';
+            if (myEls.length > 1) {
+              if ((myEls[0].firstElementChild) && (myEls[0].firstElementChild.classList.contains('h3closed'))) {
+                myEls[1].style.display = 'none';
+              } else {
+                myEls[1].style.display = 'block';
+              }
+            }
+          }
+        } else if (myName === 'merge') {
+          myEls = document.querySelectorAll('.box_editorsMerge');
+          if (myEls.length > 0) {
+            myEls[0].style.display = 'block';
+            if (myEls.length > 1) {
+              if ((myEls[0].firstElementChild) && (myEls[0].firstElementChild.classList.contains('h3closed'))) {
+                myEls[1].style.display = 'none';
+              } else {
+                myEls[1].style.display = 'block';
+              }
+            }
+          }
+        } else if (myName === 'html') {
+          myEls = document.querySelectorAll('.box_editor1');
+          if (myEls.length > 0) {
+            myEls[0].style.display = 'block';
+            if (myEls.length > 1) {
+              if ((myEls[0].firstElementChild) && (myEls[0].firstElementChild.classList.contains('h3closed'))) {
+                myEls[1].style.display = 'none';
+              } else {
+                myEls[1].style.display = 'block';
+              }
+            }
+          }
+        } else if (myName === 'preview') {
+          myEls = document.querySelectorAll('#box_editor1preview');
+          if (myEls.length > 0) myEls[0].style.display = 'block';
+        }
+      }
+
+      function hideBox(myName) {
+        var myEls, myI;
+        if ((!(myName)) || (typeof myName !== 'string')) return false;
+        myName = myName.toLowerCase();
+        if (myName === 'all') {
+          hideBox('showhide');
+          hideBox('h1');
+          hideBox('topform');
+          hideBox('headinfo');
+          hideBox('css');
+          hideBox('js');
+          hideBox('json');
+          hideBox('merge');
+          hideBox('html');
+          hideBox('preview');
+        } else if (myName === 'showhide') {
+          myEls = document.querySelectorAll('#cont_ShowHide');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+        } else if (myName === 'h1') {
+          myEls = document.querySelectorAll('#cont_head');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+        } else if (myName === 'topform') {
+          myEls = document.querySelectorAll('#cont_form');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+        } else if (myName === 'headinfo') {
+          myEls = document.querySelectorAll('#cont_results');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+        } else if (myName === 'css') {
+          myEls = document.querySelectorAll('.box_editor2');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+          if (myEls.length > 1) myEls[1].style.display = 'none';
+        } else if (myName === 'js') {
+          myEls = document.querySelectorAll('.box_editor3');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+          if (myEls.length > 1) myEls[1].style.display = 'none';
+        } else if (myName === 'json') {
+          myEls = document.querySelectorAll('.box_editor4');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+          if (myEls.length > 1) myEls[1].style.display = 'none';
+        } else if (myName === 'merge') {
+          myEls = document.querySelectorAll('.box_editorsMerge');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+          if (myEls.length > 1) myEls[1].style.display = 'none';
+        } else if (myName === 'html') {
+          myEls = document.querySelectorAll('.box_editor1');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+          if (myEls.length > 1) myEls[1].style.display = 'none';
+        } else if (myName === 'preview') {
+          myEls = document.querySelectorAll('#box_editor1preview');
+          if (myEls.length > 0) myEls[0].style.display = 'none';
+        }
+      }
+
+      function insertSource(mySrc) {
+        document.getElementById('code_source').value = mySrc;
+      }
+
+      function mergeWith(mySrc, myLeftRight) {
+        if ((!(myLeftRight)) || (typeof myLeftRight !== 'string')) myLeftRight = 'right';
+        myLeftRight = myLeftRight.toLowerCase();
+        if (myLeftRight === 'left') {
+          dv.edit.setValue(mySrc);
+        } else {
+          dv.rightOriginal().setValue(mySrc);
+        }
+      }
+
+      function insertSelf() {
+        insertSource((new XMLSerializer().serializeToString(document.doctype))+document.documentElement.outerHTML);
+        /* insertSource(document.documentElement.outerHTML); */
+      }
+
+      function setBodyBGColor(myBGColor) {
+        if ((!(myBGColor)) || (typeof myBGColor !== 'string')) return false;
+        document.body.style.backgroundColor = myBGColor;
+      }
+
+      function insertInEditor(myEditorName, mySrc) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          editor2.setValue(mySrc);
+        } else if (myEditorName === 'js') {
+          editor3.setValue(mySrc);
+        } else if (myEditorName === 'json') {
+          editor4.setValue(mySrc);
+        } else if (myEditorName === 'mergeleft') {
+          dv.edit.setValue(mySrc);
+        } else if (myEditorName === 'mergeright') {
+          dv.rightOriginal().setValue(mySrc);
+        } else if (myEditorName === 'html') {
+          editor1.setValue(mySrc);
+        }
+      }
+
+      function refreshEditor(myEditorName) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          editor2.refresh();
+        } else if (myEditorName === 'js') {
+          editor3.refresh();
+        } else if (myEditorName === 'json') {
+          editor4.refresh();
+        } else if (myEditorName === 'mergeleft') {
+          dv.edit.refresh();
+        } else if (myEditorName === 'mergeright') {
+          dv.rightOriginal().refresh();
+        } else if (myEditorName === 'html') {
+          editor1.refresh();
+        }
+      }
+
+      function selectAllEditor(myEditorName) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          CodeMirror.commands["selectAll"](editor2);
+        } else if (myEditorName === 'js') {
+          CodeMirror.commands["selectAll"](editor3);
+        } else if (myEditorName === 'json') {
+          CodeMirror.commands["selectAll"](editor4);
+        } else if (myEditorName === 'mergeleft') {
+          CodeMirror.commands["selectAll"](dv.edit);
+        } else if (myEditorName === 'mergeright') {
+          CodeMirror.commands["selectAll"](dv.rightOriginal());
+        } else if (myEditorName === 'html') {
+          CodeMirror.commands["selectAll"](editor1);
+        }
+      }
+
+      function formatSelection(myEditorName) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          autoFormatSelection(editor2);
+        } else if (myEditorName === 'js') {
+          autoFormatSelection(editor3);
+        } else if (myEditorName === 'json') {
+          autoFormatSelection(editor4);
+        } else if (myEditorName === 'mergeleft') {
+          autoFormatSelection(dv.edit);
+        } else if (myEditorName === 'mergeright') {
+          autoFormatSelection(dv.rightOriginal());
+        } else if (myEditorName === 'html') {
+          autoFormatSelection(editor1);
+        }
+      }
+
+      function formatAll(myEditorName) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if (myEditorName === 'css') {
+          autoFormatAll(editor2);
+        } else if (myEditorName === 'js') {
+          autoFormatAll(editor3);
+        } else if (myEditorName === 'json') {
+          autoFormatAll(editor4);
+        } else if (myEditorName === 'mergeleft') {
+          autoFormatAll(dv.edit);
+        } else if (myEditorName === 'mergeright') {
+          autoFormatAll(dv.rightOriginal());
+        } else if (myEditorName === 'html') {
+          autoFormatAll(editor1);
+        }
+      }
+
+      function openBox(myBoxName) {
+        if ((!(myBoxName)) || (typeof myBoxName !== 'string')) return false;
+        myBoxName = myBoxName.toLowerCase();
+        if (myBoxName === 'css') {
+          document.getElementById('box_editor2').style.display = 'block';
+          document.getElementById('h3_editor2').classList.remove('h3closed');
+          editor2.refresh();
+        } else if (myBoxName === 'js') {
+          document.getElementById('box_editor3').style.display = 'block';
+          document.getElementById('h3_editor3').classList.remove('h3closed');
+          editor3.refresh();
+        } else if (myBoxName === 'json') {
+          document.getElementById('box_editor4').style.display = 'block';
+          document.getElementById('h3_editor4').classList.remove('h3closed');
+          editor4.refresh();
+        } else if (myBoxName === 'merge') {
+          document.getElementById('box_editorsMerge').style.display = 'block';
+          document.getElementById('h3_editorsMerge').classList.remove('h3closed');
+          dv.edit.refresh();
+          dv.rightOriginal().refresh();
+        } else if (myBoxName === 'html') {
+          document.getElementById('box_editor1preview').style.display = 'block';
+          document.getElementById('box_editor1').style.display = 'block';
+          document.getElementById('h3_editor1').classList.remove('h3closed');
+          editor1.refresh();
+        }
+      }
+
+      function closeBox(myBoxName) {
+        if ((!(myBoxName)) || (typeof myBoxName !== 'string')) return false;
+        myBoxName = myBoxName.toLowerCase();
+        if (myBoxName === 'css') {
+          document.getElementById('box_editor2').style.display = 'none';
+          document.getElementById('h3_editor2').classList.add('h3closed');
+        } else if (myBoxName === 'js') {
+          document.getElementById('box_editor3').style.display = 'none';
+          document.getElementById('h3_editor3').classList.add('h3closed');
+        } else if (myBoxName === 'json') {
+          document.getElementById('box_editor4').style.display = 'none';
+          document.getElementById('h3_editor4').classList.add('h3closed');
+        } else if (myBoxName === 'merge') {
+          document.getElementById('box_editorsMerge').style.display = 'none';
+          document.getElementById('h3_editorsMerge').classList.add('h3closed');
+        } else if (myBoxName === 'html') {
+          document.getElementById('box_editor1preview').style.display = 'none';
+          document.getElementById('box_editor1').style.display = 'none';
+          document.getElementById('h3_editor1').classList.add('h3closed');
+        }
+      }
+
+      function setEditorHeight(myEditorName, myHeight, myDiff) {
+        if ((!(myEditorName)) || (typeof myEditorName !== 'string')) return false;
+        myEditorName = myEditorName.toLowerCase();
+        if ((!(myHeight)) || (typeof myHeight !== 'string')) myHeight = 'calc';
+        if ((!(myDiff)) || (typeof myDiff !== 'string'))  {
+          myDiff = 15;
+        } else {
+          myDiff = parseInt(myDiff, 10);
+          if (isNaN(myDiff)) myDiff = 15;
+        }
+        if (myEditorName === 'css') {
+          if (myHeight === 'calc') {
+            document.getElementById('box_editor2').style.height = 'calc(100vh - ' + (document.getElementById('box_editor2').offsetTop + myDiff) + 'px)';
+          } else {
+            document.getElementById('box_editor2').style.height = myHeight;
+          }
+          editor2.refresh();
+        } else if (myEditorName === 'js') {
+          if (myHeight === 'calc') {
+            document.getElementById('box_editor3').style.height = 'calc(100vh - ' + (document.getElementById('box_editor3').offsetTop + myDiff) + 'px)';
+          } else {
+            document.getElementById('box_editor3').style.height = myHeight;
+          }
+          editor3.refresh();
+        } else if (myEditorName === 'json') {
+          if (myHeight === 'calc') {
+            document.getElementById('box_editor4').style.height = 'calc(100vh - ' + (document.getElementById('box_editor4').offsetTop + myDiff) + 'px)';
+          } else {
+            document.getElementById('box_editor4').style.height = myHeight;
+          }
+          editor4.refresh();
+        } else if (myEditorName === 'merge') {
+          if (myHeight === 'calc') {
+            document.getElementById('box_editorsMerge').style.height = 'calc(100vh - ' + (document.getElementById('box_editorsMerge').offsetTop + myDiff) + 'px)';
+          } else {
+            document.getElementById('box_editorsMerge').style.height = myHeight;
+            if ((myHeight === 'auto') || (myHeight.indexOf('%') > 0)) {
+              dv.edit.refresh();
+              dv.rightOriginal().refresh();
+              document.getElementById('box_editorsMerge').style.height = (document.getElementById('box_editorsMerge').offsetHeight - myDiff) + 'px';
+            }
+          }
+          dv.edit.refresh();
+          dv.rightOriginal().refresh();
+        } else if (myEditorName === 'html') {
+          if (myHeight === 'calc') {
+            document.getElementById('box_editor1').style.height = 'calc(100vh - ' + (document.getElementById('box_editor1').offsetTop + myDiff) + 'px)';
+          } else {
+            document.getElementById('box_editor1').style.height = myHeight;
+          }
+          editor1.refresh();
+        } else if (myEditorName === 'preview') {
+          if (myHeight === 'calc') {
+            document.getElementById('box_editor1preview').style.height = 'calc(100vh - ' + (document.getElementById('box_editor1preview').offsetTop + myDiff) + 'px)';
+          } else {
+            document.getElementById('box_editor1preview').style.height = myHeight;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="cont_ShowHide" style="vertical-align: middle;">
+      <span style="font-size: 11px; line-height: 13px;">Show/Hide </span>
+      <button onclick="toggleShowHide('#cont_ShowHide')">Self</button>
+      <button onclick="toggleShowHide('#cont_head')">H1</button>
+      <button onclick="toggleShowHide('#cont_form')">TopForm</button>
+      <button onclick="toggleShowHide('#cont_results')">TopForm/HEADinfo</button>
+      <button onclick="toggleShowHide('.box_editor2')">CSS</button>
+      <button onclick="toggleShowHide('.box_editor3')">JS</button>
+      <button onclick="toggleShowHide('.box_editor4')">JSON</button>
+      <button onclick="toggleShowHide('.box_editorsMerge')">Merge</button>
+      <button onclick="toggleShowHide('.box_editor1')">HTML-Preview</button>
+      <button onclick="toggleShowHide('#box_editor1preview')">Preview</button>
+    </div>
+    <div id="cont_head">
+      <h1 style="margin-top: 5px; margin-bottom: 5px;">check_4D_HTML</h1>
+    </div>
+    <div id="cont_form" class="myContA" style="min-width: 35%; width: auto;">
+      <div style="display: none;">URL</div>
+      <input style="display: none;" id="form1_url" name="xform1_url" type="url" tabindex="1" title="URL-Eingabe" value="" placeholder="http://www.myShopDomain.de" oninput="handleFileSelect_URL(this.value); return false">
+      <button style="display: none;" onclick="startNewURL()">Start-Check</button>
+      <h4 style="clear: both; padding: 0; margin: 8px 0px 0px;">HTMLCode to test:
+      <div onclick="toggleShowHide('#cont_results')" style="cursor: pointer; text-align: right; width: 57%; display: inline-block; color: rgb(255, 5, 210); font-size: 85%; font-weight: normal; text-decoration: none;">Only HEAD info</div>
+      </h4>
+      <textarea id="code_source" name="code_source" style="width: 97%; min-height: 140px;"></textarea>
+      <br />
+      <button onclick="insertSelf()">Insert Self source</button>
+      <button onclick="mergeWith(document.getElementById('code_source').value, 'left')">Insert LeftMerge</button>
+      <button onclick="mergeWith(document.getElementById('code_source').value, 'right')">Insert RightMerge</button>
+      <button onclick="startCheckHTMLSrc('HEAD')">Start test HEAD</button>
+      <button onclick="startCheckHTMLSrc('BODY')">Start test BODY</button>
+      <button onclick="startCheckHTMLSrc('HTML')">Start test HTML</button>
+    </div>
+    <div style="display: none;" id="cont_results" class="myContA">
+      <div id="results_box1">
+        <div>DOM 'HEAD-Breaks' test-result</div>
+        <textarea id="results_box1_txt1"></textarea>
+      </div>
+      <div id="results_box2">
+        <div>DOM 'HTML-HEAD-DissalowedTags' test-results</div>
+        <textarea id="results_box2_txt1"></textarea>
+      </div>
+      <div id="results_box3a">
+        <div>DOM 'HEAD-DissalowedTags' test-results</div>
+        <textarea id="results_box3a_txt1"></textarea>
+      </div>
+      <div id="results_box3">
+        <div>DOM 'innerHEAD-MetaDoublets' test-results</div>
+        <textarea id="results_box3_txt1"></textarea>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <!-- CM BEGIN -->
+    <div style="margin-top: 0px; min-width: 100%;">
+      <div class="h3_box box_editor2">
+        <h3 id="h3_editor2" class="h3opened" onclick="if(this.parentElement.nextElementSibling.style.display === 'none') {this.parentElement.nextElementSibling.style.display = 'block'; this.classList.remove('h3closed'); editor2.refresh();} else {this.parentElement.nextElementSibling.style.display = 'none'; this.classList.add('h3closed');}">CSS</h3>
+        <button style="margin-left: 10px;" onclick="miniEditor(editor2)">Minify</button><button style="margin-left: 10px;" onclick="if(document.getElementById('AllLintMess_editor2').offsetHeight === 0){document.getElementById('AllLintMess_editor2').textContent = getAllLintMess(editor2); document.getElementById('AllLintMess_editor2').focus();} else {document.activeElement.blur();}">Message</button><select tabindex="-1" id="myGetSel2" name="GetSel2" style="margin-left: 10px; max-width: 150px;" dir="rtl" size="1" onchange="getMyStylesheet(editor2, this); return false" autocomplete="off">
+    <option value="placeholder">Stylesheets</option>
+    <option value="ALL">GetAllStyleSheets</option>
+  </select>
+  <select tabindex="-1" id="mySetOptCommandsCSS" name="SetOptCommandsCSS" style="margin-left: 10px; max-width: 78px;" onchange="commandEditor('css', this.value); this.options[0].selected = true; return false" autocomplete="off">
+    <option value="placeholder">Cmd</option>
+    <option value="autocomplete">autocomplete(editor, getHints, options)</option>
+    <option value="clearBookmarks">clearBookmarks(editor)</option>
+    <option value="clearSearch">clearSearch(editor)</option>
+    <option value="defaultTab">defaultTab(editor)</option>
+    <option value="delCharAfter">delCharAfter(editor)</option>
+    <option value="delCharBefore">delCharBefore(editor)</option>
+    <option value="delGroupAfter">delGroupAfter(editor)</option>
+    <option value="delGroupBefore">delGroupBefore(editor)</option>
+    <option value="delLineLeft">delLineLeft(editor)</option>
+    <option value="delLineRight">delLineRight(editor)</option>
+    <option value="delWordAfter">delWordAfter(editor)</option>
+    <option value="delWordBefore">delWordBefore(editor)</option>
+    <option value="delWrappedLineLeft">delWrappedLineLeft(editor)</option>
+    <option value="delWrappedLineRight">delWrappedLineRight(editor)</option>
+    <option value="deleteLine">deleteLine(editor)</option>
+    <option value="deleteToSublimeMark">deleteToSublimeMark(editor)</option>
+    <option value="downcaseAtCursor">downcaseAtCursor(editor)</option>
+    <option value="duplicateLine">duplicateLine(editor)</option>
+    <option value="find">find(editor)</option>
+    <option value="findAllUnder">findAllUnder(editor)</option>
+    <option value="findNext">findNext(editor, rev)</option>
+    <option value="findPrev">findPrev(editor)</option>
+    <option value="findUnder">findUnder(editor)</option>
+    <option value="findUnderPrevious">findUnderPrevious(editor)</option>
+    <option value="fold">fold(editor)</option>
+    <option value="foldAll">foldAll(editor)</option>
+    <option value="goCharLeft">goCharLeft(editor)</option>
+    <option value="goCharRight">goCharRight(editor)</option>
+    <option value="goColumnLeft">goColumnLeft(editor)</option>
+    <option value="goColumnRight">goColumnRight(editor)</option>
+    <option value="goDocEnd">goDocEnd(editor)</option>
+    <option value="goDocStart">goDocStart(editor)</option>
+    <option value="goGroupLeft">goGroupLeft(editor)</option>
+    <option value="goGroupRight">goGroupRight(editor)</option>
+    <option value="goLineDown">goLineDown(editor)</option>
+    <option value="goLineEnd">goLineEnd(editor)</option>
+    <option value="goLineLeft">goLineLeft(editor)</option>
+    <option value="goLineLeftSmart">goLineLeftSmart(editor)</option>
+    <option value="goLineRight">goLineRight(editor)</option>
+    <option value="goLineStart">goLineStart(editor)</option>
+    <option value="goLineStartSmart">goLineStartSmart(editor)</option>
+    <option value="goLineUp">goLineUp(editor)</option>
+    <option value="goNextDiff">goNextDiff(editor)</option>
+    <option value="goPageDown">goPageDown(editor)</option>
+    <option value="goPageUp">goPageUp(editor)</option>
+    <option value="goPrevDiff">goPrevDiff(editor)</option>
+    <option value="goSubwordLeft">goSubwordLeft(editor)</option>
+    <option value="goSubwordRight">goSubwordRight(editor)</option>
+    <option value="goToBracket">goToBracket(editor)</option>
+    <option value="goWordLeft">goWordLeft(editor)</option>
+    <option value="goWordRight">goWordRight(editor)</option>
+    <option value="indentAuto">indentAuto(editor)</option>
+    <option value="indentLess">indentLess(editor)</option>
+    <option value="indentMore">indentMore(editor)</option>
+    <option value="insertLineAfter">insertLineAfter(editor)</option>
+    <option value="insertLineBefore">insertLineBefore(editor)</option>
+    <option value="insertSoftTab">insertSoftTab(editor)</option>
+    <option value="insertTab">insertTab(editor)</option>
+    <option value="joinLines">joinLines(editor)</option>
+    <option value="killLine">killLine(editor)</option>
+    <option value="newlineAndIndent">newlineAndIndent(editor)</option>
+    <option value="nextBookmark">nextBookmark(editor)</option>
+    <option value="prevBookmark">prevBookmark(editor)</option>
+    <option value="redo">redo(editor)</option>
+    <option value="redoSelection">redoSelection(editor)</option>
+    <option value="replace">replace(editor, all)</option>
+    <option value="replaceAll">replaceAll(editor)</option>
+    <option value="scrollLineDown">scrollLineDown(editor)</option>
+    <option value="scrollLineUp">scrollLineUp(editor)</option>
+    <option value="selectAll">selectAll(editor)</option>
+    <option value="selectBetweenBrackets">selectBetweenBrackets(editor)</option>
+    <option value="selectBookmarks">selectBookmarks(editor)</option>
+    <option value="selectLine">selectLine(editor)</option>
+    <option value="selectLinesDownward">selectLinesDownward(editor)</option>
+    <option value="selectLinesUpward">selectLinesUpward(editor)</option>
+    <option value="selectNextOccurrence">selectNextOccurrence(editor)</option>
+    <option value="selectScope">selectScope(editor)</option>
+    <option value="selectToSublimeMark">selectToSublimeMark(editor)</option>
+    <option value="setSublimeMark">setSublimeMark(editor)</option>
+    <option value="showInCenter">showInCenter(editor)</option>
+    <option value="singleSelection">singleSelection(editor)</option>
+    <option value="singleSelectionTop">singleSelectionTop(editor)</option>
+    <option value="smartBackspace">smartBackspace(editor)</option>
+    <option value="sortLines">sortLines(editor)</option>
+    <option value="sortLinesInsensitive">sortLinesInsensitive(editor)</option>
+    <option value="splitSelectionByLine">splitSelectionByLine(editor)</option>
+    <option value="sublimeYank">sublimeYank(editor)</option>
+    <option value="swapLineDown">swapLineDown(editor)</option>
+    <option value="swapLineUp">swapLineUp(editor)</option>
+    <option value="swapWithSublimeMark">swapWithSublimeMark(editor)</option>
+    <option value="toMatchingTag">toMatchingTag(editor)</option>
+    <option value="toggleBookmark">toggleBookmark(editor)</option>
+    <option value="toggleComment">toggleComment(editor)</option>
+    <option value="toggleFold">toggleFold(editor)</option>
+    <option value="toggleOverwrite">toggleOverwrite(editor)</option>
+    <option value="transposeChars">transposeChars(editor)</option>
+    <option value="undo">undo(editor)</option>
+    <option value="undoSelection">undoSelection(editor)</option>
+    <option value="unfold">unfold(editor)</option>
+    <option value="unfoldAll">unfoldAll(editor)</option>
+    <option value="upcaseAtCursor">upcaseAtCursor(editor)</option>
+    <option value="wrapLines">wrapLines(editor)</option>
+  </select><span title="Formatting" onclick="autoFormatSelection(editor2); return false" style="cursor: pointer; margin-left: 10px; opacity: 1; font-size: 12px;">&#128154;</span><span title="Ctrl-F / Cmd-F&#13;Start searching&#13;&#13;Ctrl-G / Cmd-G&#13;Find next&#13;&#13;Shift-Ctrl-G / Shift-Cmd-G&#13;Find previous&#13;&#13;Shift-Ctrl-F / Cmd-Option-F&#13;Replace&#13;&#13;Shift-Ctrl-R / Shift-Cmd-Option-F&#13;Replace all" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">&#128269;</span>
+  <span title="Alt-Left: goSubwordLeft&#13;Alt-Right: goSubwordRight&#13;Cmd-Up: scrollLineUp&#13;Cmd-Down: scrollLineDown&#13;Shift-Cmd-L: splitSelectionByLine&#13;Alt-Tab: indentLess&#13;Esc: singleSelectionTop&#13;Cmd-L: selectLine&#13;Shift-Cmd-K: deleteLine&#13;Cmd-Enter: insertLineAfter&#13;Shift-Cmd-Enter: insertLineBefore&#13;Cmd-D: selectNextOccurrence&#13;Shift-Cmd-Space: selectScope&#13;Shift-Cmd-M: selectBetweenBrackets&#13;Cmd-M: goToBracket&#13;Cmd-Ctrl-Up: swapLineUp&#13;Cmd-Ctrl-Down: swapLineDown&#13;Cmd-/: toggleComment&#13;Cmd-J: joinLines&#13;Ctrl-J: jumpToMatchingTag&#13;Shift-Cmd-D: duplicateLine&#13;Cmd-T: transposeChars&#13;F9: sortLines&#13;Cmd-F9: sortLinesInsensitive&#13;F2: nextBookmark&#13;Shift-F2: prevBookmark&#13;Cmd-F2: toggleBookmark&#13;Shift-Cmd-F2: clearBookmarks&#13;Alt-F2: selectBookmarks&#13;Alt-Q: wrapLines&#13;Cmd-K Cmd-Backspace: delLineLeft&#13;Backspace: smartBackspace&#13;Cmd-K Cmd-K: delLineRight&#13;Cmd-K Cmd-U: upcaseAtCursor&#13;Cmd-K Cmd-L: downcaseAtCursor&#13;Cmd-K Cmd-Space: setSublimeMark&#13;Cmd-K Cmd-A: selectToSublimeMark&#13;Cmd-K Cmd-W: deleteToSublimeMark&#13;Cmd-K Cmd-X: swapWithSublimeMark&#13;Cmd-K Cmd-Y: sublimeYank&#13;Cmd-K Cmd-G: clearBookmarks&#13;Cmd-K Cmd-C: showInCenter&#13;Shift-Alt-Up: selectLinesUpward&#13;Shift-Alt-Down: selectLinesDownward&#13;Cmd-F3: findUnder&#13;Shift-Cmd-F3: findUnderPrevious&#13;Ctrl-Q: fold&#13;Shift-Cmd-[: fold&#13;Shift-Cmd-]: unfold&#13;Cmd-K Cmd-j: unfoldAll&#13;Cmd-K Cmd-0: unfoldAll&#13;Cmd-H: replace" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">Keymap</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Ctrl-Space=AutoComplete</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Shift-Tab=AutoIndent</span><span style="clear: both;"></span>
+        <p id="AllLintMess_editor2" class="allLintMess" tabindex="-1"></p>
+      </div>
+      <form id="box_editor2" class="cDefaultClosed box_editor2" style="display: block; min-width: 100%; clear: both;" onmousemove="if(this.dataset.lastheight !== this.style.height) {this.dataset.lastheight = this.style.height; editor2.refresh();}">
+        <textarea id="code2" name="code2"></textarea>
+      </form>
+      <div class="h3_box box_editor3">
+        <h3 id="h3_editor3" class="h3opened" onclick="if(this.parentElement.nextElementSibling.style.display === 'none') {this.parentElement.nextElementSibling.style.display = 'block'; this.classList.remove('h3closed'); editor3.refresh();} else {this.parentElement.nextElementSibling.style.display = 'none'; this.classList.add('h3closed');}">JS</h3>
+        <button style="margin-left: 10px;" onclick="miniEditor(editor3)">Minify</button><button style="margin-left: 10px;" onclick="if(document.getElementById('AllLintMess_editor3').offsetHeight === 0){document.getElementById('AllLintMess_editor3').textContent = getAllLintMess(editor3); document.getElementById('AllLintMess_editor3').focus();} else {document.activeElement.blur();}">Message</button><select tabindex="-1" id="myGetSel3" name="GetSel3" style="margin-left: 10px; max-width: 150px;" dir="rtl" size="1" onchange="getMyJavascript(editor3, this); return false" autocomplete="off">
+    <option value="placeholder">Javascripts</option>
+    <option value="ALL">GetAllJavaScripts</option>
+  </select>
+  <select tabindex="-1" id="mySetOptCommandsJS" name="SetOptCommandsJS" style="margin-left: 10px; max-width: 78px;" onchange="commandEditor('js', this.value); this.options[0].selected = true; return false" autocomplete="off">
+    <option value="placeholder">Cmd</option>
+    <option value="autocomplete">autocomplete(editor, getHints, options)</option>
+    <option value="clearBookmarks">clearBookmarks(editor)</option>
+    <option value="clearSearch">clearSearch(editor)</option>
+    <option value="defaultTab">defaultTab(editor)</option>
+    <option value="delCharAfter">delCharAfter(editor)</option>
+    <option value="delCharBefore">delCharBefore(editor)</option>
+    <option value="delGroupAfter">delGroupAfter(editor)</option>
+    <option value="delGroupBefore">delGroupBefore(editor)</option>
+    <option value="delLineLeft">delLineLeft(editor)</option>
+    <option value="delLineRight">delLineRight(editor)</option>
+    <option value="delWordAfter">delWordAfter(editor)</option>
+    <option value="delWordBefore">delWordBefore(editor)</option>
+    <option value="delWrappedLineLeft">delWrappedLineLeft(editor)</option>
+    <option value="delWrappedLineRight">delWrappedLineRight(editor)</option>
+    <option value="deleteLine">deleteLine(editor)</option>
+    <option value="deleteToSublimeMark">deleteToSublimeMark(editor)</option>
+    <option value="downcaseAtCursor">downcaseAtCursor(editor)</option>
+    <option value="duplicateLine">duplicateLine(editor)</option>
+    <option value="find">find(editor)</option>
+    <option value="findAllUnder">findAllUnder(editor)</option>
+    <option value="findNext">findNext(editor, rev)</option>
+    <option value="findPrev">findPrev(editor)</option>
+    <option value="findUnder">findUnder(editor)</option>
+    <option value="findUnderPrevious">findUnderPrevious(editor)</option>
+    <option value="fold">fold(editor)</option>
+    <option value="foldAll">foldAll(editor)</option>
+    <option value="goCharLeft">goCharLeft(editor)</option>
+    <option value="goCharRight">goCharRight(editor)</option>
+    <option value="goColumnLeft">goColumnLeft(editor)</option>
+    <option value="goColumnRight">goColumnRight(editor)</option>
+    <option value="goDocEnd">goDocEnd(editor)</option>
+    <option value="goDocStart">goDocStart(editor)</option>
+    <option value="goGroupLeft">goGroupLeft(editor)</option>
+    <option value="goGroupRight">goGroupRight(editor)</option>
+    <option value="goLineDown">goLineDown(editor)</option>
+    <option value="goLineEnd">goLineEnd(editor)</option>
+    <option value="goLineLeft">goLineLeft(editor)</option>
+    <option value="goLineLeftSmart">goLineLeftSmart(editor)</option>
+    <option value="goLineRight">goLineRight(editor)</option>
+    <option value="goLineStart">goLineStart(editor)</option>
+    <option value="goLineStartSmart">goLineStartSmart(editor)</option>
+    <option value="goLineUp">goLineUp(editor)</option>
+    <option value="goNextDiff">goNextDiff(editor)</option>
+    <option value="goPageDown">goPageDown(editor)</option>
+    <option value="goPageUp">goPageUp(editor)</option>
+    <option value="goPrevDiff">goPrevDiff(editor)</option>
+    <option value="goSubwordLeft">goSubwordLeft(editor)</option>
+    <option value="goSubwordRight">goSubwordRight(editor)</option>
+    <option value="goToBracket">goToBracket(editor)</option>
+    <option value="goWordLeft">goWordLeft(editor)</option>
+    <option value="goWordRight">goWordRight(editor)</option>
+    <option value="indentAuto">indentAuto(editor)</option>
+    <option value="indentLess">indentLess(editor)</option>
+    <option value="indentMore">indentMore(editor)</option>
+    <option value="insertLineAfter">insertLineAfter(editor)</option>
+    <option value="insertLineBefore">insertLineBefore(editor)</option>
+    <option value="insertSoftTab">insertSoftTab(editor)</option>
+    <option value="insertTab">insertTab(editor)</option>
+    <option value="joinLines">joinLines(editor)</option>
+    <option value="killLine">killLine(editor)</option>
+    <option value="newlineAndIndent">newlineAndIndent(editor)</option>
+    <option value="nextBookmark">nextBookmark(editor)</option>
+    <option value="prevBookmark">prevBookmark(editor)</option>
+    <option value="redo">redo(editor)</option>
+    <option value="redoSelection">redoSelection(editor)</option>
+    <option value="replace">replace(editor, all)</option>
+    <option value="replaceAll">replaceAll(editor)</option>
+    <option value="scrollLineDown">scrollLineDown(editor)</option>
+    <option value="scrollLineUp">scrollLineUp(editor)</option>
+    <option value="selectAll">selectAll(editor)</option>
+    <option value="selectBetweenBrackets">selectBetweenBrackets(editor)</option>
+    <option value="selectBookmarks">selectBookmarks(editor)</option>
+    <option value="selectLine">selectLine(editor)</option>
+    <option value="selectLinesDownward">selectLinesDownward(editor)</option>
+    <option value="selectLinesUpward">selectLinesUpward(editor)</option>
+    <option value="selectNextOccurrence">selectNextOccurrence(editor)</option>
+    <option value="selectScope">selectScope(editor)</option>
+    <option value="selectToSublimeMark">selectToSublimeMark(editor)</option>
+    <option value="setSublimeMark">setSublimeMark(editor)</option>
+    <option value="showInCenter">showInCenter(editor)</option>
+    <option value="singleSelection">singleSelection(editor)</option>
+    <option value="singleSelectionTop">singleSelectionTop(editor)</option>
+    <option value="smartBackspace">smartBackspace(editor)</option>
+    <option value="sortLines">sortLines(editor)</option>
+    <option value="sortLinesInsensitive">sortLinesInsensitive(editor)</option>
+    <option value="splitSelectionByLine">splitSelectionByLine(editor)</option>
+    <option value="sublimeYank">sublimeYank(editor)</option>
+    <option value="swapLineDown">swapLineDown(editor)</option>
+    <option value="swapLineUp">swapLineUp(editor)</option>
+    <option value="swapWithSublimeMark">swapWithSublimeMark(editor)</option>
+    <option value="toMatchingTag">toMatchingTag(editor)</option>
+    <option value="toggleBookmark">toggleBookmark(editor)</option>
+    <option value="toggleComment">toggleComment(editor)</option>
+    <option value="toggleFold">toggleFold(editor)</option>
+    <option value="toggleOverwrite">toggleOverwrite(editor)</option>
+    <option value="transposeChars">transposeChars(editor)</option>
+    <option value="undo">undo(editor)</option>
+    <option value="undoSelection">undoSelection(editor)</option>
+    <option value="unfold">unfold(editor)</option>
+    <option value="unfoldAll">unfoldAll(editor)</option>
+    <option value="upcaseAtCursor">upcaseAtCursor(editor)</option>
+    <option value="wrapLines">wrapLines(editor)</option>
+  </select><span title="Formatting" onclick="autoFormatSelection(editor3); return false" style="cursor: pointer; margin-left: 10px; opacity: 1; font-size: 12px;">&#128154;</span><span title="Ctrl-F / Cmd-F&#13;Start searching&#13;&#13;Ctrl-G / Cmd-G&#13;Find next&#13;&#13;Shift-Ctrl-G / Shift-Cmd-G&#13;Find previous&#13;&#13;Shift-Ctrl-F / Cmd-Option-F&#13;Replace&#13;&#13;Shift-Ctrl-R / Shift-Cmd-Option-F&#13;Replace all" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">&#128269;</span>
+  <span title="Alt-Left: goSubwordLeft&#13;Alt-Right: goSubwordRight&#13;Cmd-Up: scrollLineUp&#13;Cmd-Down: scrollLineDown&#13;Shift-Cmd-L: splitSelectionByLine&#13;Alt-Tab: indentLess&#13;Esc: singleSelectionTop&#13;Cmd-L: selectLine&#13;Shift-Cmd-K: deleteLine&#13;Cmd-Enter: insertLineAfter&#13;Shift-Cmd-Enter: insertLineBefore&#13;Cmd-D: selectNextOccurrence&#13;Shift-Cmd-Space: selectScope&#13;Shift-Cmd-M: selectBetweenBrackets&#13;Cmd-M: goToBracket&#13;Cmd-Ctrl-Up: swapLineUp&#13;Cmd-Ctrl-Down: swapLineDown&#13;Cmd-/: toggleComment&#13;Cmd-J: joinLines&#13;Ctrl-J: jumpToMatchingTag&#13;Shift-Cmd-D: duplicateLine&#13;Cmd-T: transposeChars&#13;F9: sortLines&#13;Cmd-F9: sortLinesInsensitive&#13;F2: nextBookmark&#13;Shift-F2: prevBookmark&#13;Cmd-F2: toggleBookmark&#13;Shift-Cmd-F2: clearBookmarks&#13;Alt-F2: selectBookmarks&#13;Alt-Q: wrapLines&#13;Cmd-K Cmd-Backspace: delLineLeft&#13;Backspace: smartBackspace&#13;Cmd-K Cmd-K: delLineRight&#13;Cmd-K Cmd-U: upcaseAtCursor&#13;Cmd-K Cmd-L: downcaseAtCursor&#13;Cmd-K Cmd-Space: setSublimeMark&#13;Cmd-K Cmd-A: selectToSublimeMark&#13;Cmd-K Cmd-W: deleteToSublimeMark&#13;Cmd-K Cmd-X: swapWithSublimeMark&#13;Cmd-K Cmd-Y: sublimeYank&#13;Cmd-K Cmd-G: clearBookmarks&#13;Cmd-K Cmd-C: showInCenter&#13;Shift-Alt-Up: selectLinesUpward&#13;Shift-Alt-Down: selectLinesDownward&#13;Cmd-F3: findUnder&#13;Shift-Cmd-F3: findUnderPrevious&#13;Ctrl-Q: fold&#13;Shift-Cmd-[: fold&#13;Shift-Cmd-]: unfold&#13;Cmd-K Cmd-j: unfoldAll&#13;Cmd-K Cmd-0: unfoldAll&#13;Cmd-H: replace" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">Keymap</span>
+  <span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Ctrl-Space=AutoComplete</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Shift-Tab=AutoIndent</span><span style="clear: both;"></span>
+        <p id="AllLintMess_editor3" class="allLintMess" tabindex="-1"></p>
+      </div>
+      <form id="box_editor3" class="cDefaultClosed box_editor3" style="display: block; min-width: 100%; clear: both;" onmousemove="if(this.dataset.lastheight !== this.style.height) {this.dataset.lastheight = this.style.height; editor3.refresh();}">
+        <textarea id="code3" name="code3"></textarea>
+      </form>
+      <div class="h3_box box_editor4">
+        <h3 id="h3_editor4" class="h3opened" onclick="if(this.parentElement.nextElementSibling.style.display === 'none') {this.parentElement.nextElementSibling.style.display = 'block'; this.classList.remove('h3closed'); editor4.refresh();} else {this.parentElement.nextElementSibling.style.display = 'none'; this.classList.add('h3closed');}">JSON</h3>
+        <button style="margin-left: 10px;" onclick="miniEditor(editor4)">Minify</button><button style="margin-left: 10px;" onclick="if(document.getElementById('AllLintMess_editor4').offsetHeight === 0){document.getElementById('AllLintMess_editor4').textContent = getAllLintMess(editor4); document.getElementById('AllLintMess_editor4').focus();} else {document.activeElement.blur();}">Message</button>
+  <select tabindex="-1" id="mySetOptCommandsJSON" name="SetOptCommandsJSON" style="margin-left: 10px; max-width: 78px;" onchange="commandEditor('json', this.value); this.options[0].selected = true; return false" autocomplete="off">
+    <option value="placeholder">Cmd</option>
+    <option value="autocomplete">autocomplete(editor, getHints, options)</option>
+    <option value="clearBookmarks">clearBookmarks(editor)</option>
+    <option value="clearSearch">clearSearch(editor)</option>
+    <option value="defaultTab">defaultTab(editor)</option>
+    <option value="delCharAfter">delCharAfter(editor)</option>
+    <option value="delCharBefore">delCharBefore(editor)</option>
+    <option value="delGroupAfter">delGroupAfter(editor)</option>
+    <option value="delGroupBefore">delGroupBefore(editor)</option>
+    <option value="delLineLeft">delLineLeft(editor)</option>
+    <option value="delLineRight">delLineRight(editor)</option>
+    <option value="delWordAfter">delWordAfter(editor)</option>
+    <option value="delWordBefore">delWordBefore(editor)</option>
+    <option value="delWrappedLineLeft">delWrappedLineLeft(editor)</option>
+    <option value="delWrappedLineRight">delWrappedLineRight(editor)</option>
+    <option value="deleteLine">deleteLine(editor)</option>
+    <option value="deleteToSublimeMark">deleteToSublimeMark(editor)</option>
+    <option value="downcaseAtCursor">downcaseAtCursor(editor)</option>
+    <option value="duplicateLine">duplicateLine(editor)</option>
+    <option value="find">find(editor)</option>
+    <option value="findAllUnder">findAllUnder(editor)</option>
+    <option value="findNext">findNext(editor, rev)</option>
+    <option value="findPrev">findPrev(editor)</option>
+    <option value="findUnder">findUnder(editor)</option>
+    <option value="findUnderPrevious">findUnderPrevious(editor)</option>
+    <option value="fold">fold(editor)</option>
+    <option value="foldAll">foldAll(editor)</option>
+    <option value="goCharLeft">goCharLeft(editor)</option>
+    <option value="goCharRight">goCharRight(editor)</option>
+    <option value="goColumnLeft">goColumnLeft(editor)</option>
+    <option value="goColumnRight">goColumnRight(editor)</option>
+    <option value="goDocEnd">goDocEnd(editor)</option>
+    <option value="goDocStart">goDocStart(editor)</option>
+    <option value="goGroupLeft">goGroupLeft(editor)</option>
+    <option value="goGroupRight">goGroupRight(editor)</option>
+    <option value="goLineDown">goLineDown(editor)</option>
+    <option value="goLineEnd">goLineEnd(editor)</option>
+    <option value="goLineLeft">goLineLeft(editor)</option>
+    <option value="goLineLeftSmart">goLineLeftSmart(editor)</option>
+    <option value="goLineRight">goLineRight(editor)</option>
+    <option value="goLineStart">goLineStart(editor)</option>
+    <option value="goLineStartSmart">goLineStartSmart(editor)</option>
+    <option value="goLineUp">goLineUp(editor)</option>
+    <option value="goNextDiff">goNextDiff(editor)</option>
+    <option value="goPageDown">goPageDown(editor)</option>
+    <option value="goPageUp">goPageUp(editor)</option>
+    <option value="goPrevDiff">goPrevDiff(editor)</option>
+    <option value="goSubwordLeft">goSubwordLeft(editor)</option>
+    <option value="goSubwordRight">goSubwordRight(editor)</option>
+    <option value="goToBracket">goToBracket(editor)</option>
+    <option value="goWordLeft">goWordLeft(editor)</option>
+    <option value="goWordRight">goWordRight(editor)</option>
+    <option value="indentAuto">indentAuto(editor)</option>
+    <option value="indentLess">indentLess(editor)</option>
+    <option value="indentMore">indentMore(editor)</option>
+    <option value="insertLineAfter">insertLineAfter(editor)</option>
+    <option value="insertLineBefore">insertLineBefore(editor)</option>
+    <option value="insertSoftTab">insertSoftTab(editor)</option>
+    <option value="insertTab">insertTab(editor)</option>
+    <option value="joinLines">joinLines(editor)</option>
+    <option value="killLine">killLine(editor)</option>
+    <option value="newlineAndIndent">newlineAndIndent(editor)</option>
+    <option value="nextBookmark">nextBookmark(editor)</option>
+    <option value="prevBookmark">prevBookmark(editor)</option>
+    <option value="redo">redo(editor)</option>
+    <option value="redoSelection">redoSelection(editor)</option>
+    <option value="replace">replace(editor, all)</option>
+    <option value="replaceAll">replaceAll(editor)</option>
+    <option value="scrollLineDown">scrollLineDown(editor)</option>
+    <option value="scrollLineUp">scrollLineUp(editor)</option>
+    <option value="selectAll">selectAll(editor)</option>
+    <option value="selectBetweenBrackets">selectBetweenBrackets(editor)</option>
+    <option value="selectBookmarks">selectBookmarks(editor)</option>
+    <option value="selectLine">selectLine(editor)</option>
+    <option value="selectLinesDownward">selectLinesDownward(editor)</option>
+    <option value="selectLinesUpward">selectLinesUpward(editor)</option>
+    <option value="selectNextOccurrence">selectNextOccurrence(editor)</option>
+    <option value="selectScope">selectScope(editor)</option>
+    <option value="selectToSublimeMark">selectToSublimeMark(editor)</option>
+    <option value="setSublimeMark">setSublimeMark(editor)</option>
+    <option value="showInCenter">showInCenter(editor)</option>
+    <option value="singleSelection">singleSelection(editor)</option>
+    <option value="singleSelectionTop">singleSelectionTop(editor)</option>
+    <option value="smartBackspace">smartBackspace(editor)</option>
+    <option value="sortLines">sortLines(editor)</option>
+    <option value="sortLinesInsensitive">sortLinesInsensitive(editor)</option>
+    <option value="splitSelectionByLine">splitSelectionByLine(editor)</option>
+    <option value="sublimeYank">sublimeYank(editor)</option>
+    <option value="swapLineDown">swapLineDown(editor)</option>
+    <option value="swapLineUp">swapLineUp(editor)</option>
+    <option value="swapWithSublimeMark">swapWithSublimeMark(editor)</option>
+    <option value="toMatchingTag">toMatchingTag(editor)</option>
+    <option value="toggleBookmark">toggleBookmark(editor)</option>
+    <option value="toggleComment">toggleComment(editor)</option>
+    <option value="toggleFold">toggleFold(editor)</option>
+    <option value="toggleOverwrite">toggleOverwrite(editor)</option>
+    <option value="transposeChars">transposeChars(editor)</option>
+    <option value="undo">undo(editor)</option>
+    <option value="undoSelection">undoSelection(editor)</option>
+    <option value="unfold">unfold(editor)</option>
+    <option value="unfoldAll">unfoldAll(editor)</option>
+    <option value="upcaseAtCursor">upcaseAtCursor(editor)</option>
+    <option value="wrapLines">wrapLines(editor)</option>
+  </select><span title="Formatting" onclick="autoFormatSelection(editor4); return false" style="cursor: pointer; margin-left: 10px; opacity: 1; font-size: 12px;">&#128154;</span><span title="Ctrl-F / Cmd-F&#13;Start searching&#13;&#13;Ctrl-G / Cmd-G&#13;Find next&#13;&#13;Shift-Ctrl-G / Shift-Cmd-G&#13;Find previous&#13;&#13;Shift-Ctrl-F / Cmd-Option-F&#13;Replace&#13;&#13;Shift-Ctrl-R / Shift-Cmd-Option-F&#13;Replace all" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">&#128269;</span>
+  <span title="Alt-Left: goSubwordLeft&#13;Alt-Right: goSubwordRight&#13;Cmd-Up: scrollLineUp&#13;Cmd-Down: scrollLineDown&#13;Shift-Cmd-L: splitSelectionByLine&#13;Alt-Tab: indentLess&#13;Esc: singleSelectionTop&#13;Cmd-L: selectLine&#13;Shift-Cmd-K: deleteLine&#13;Cmd-Enter: insertLineAfter&#13;Shift-Cmd-Enter: insertLineBefore&#13;Cmd-D: selectNextOccurrence&#13;Shift-Cmd-Space: selectScope&#13;Shift-Cmd-M: selectBetweenBrackets&#13;Cmd-M: goToBracket&#13;Cmd-Ctrl-Up: swapLineUp&#13;Cmd-Ctrl-Down: swapLineDown&#13;Cmd-/: toggleComment&#13;Cmd-J: joinLines&#13;Ctrl-J: jumpToMatchingTag&#13;Shift-Cmd-D: duplicateLine&#13;Cmd-T: transposeChars&#13;F9: sortLines&#13;Cmd-F9: sortLinesInsensitive&#13;F2: nextBookmark&#13;Shift-F2: prevBookmark&#13;Cmd-F2: toggleBookmark&#13;Shift-Cmd-F2: clearBookmarks&#13;Alt-F2: selectBookmarks&#13;Alt-Q: wrapLines&#13;Cmd-K Cmd-Backspace: delLineLeft&#13;Backspace: smartBackspace&#13;Cmd-K Cmd-K: delLineRight&#13;Cmd-K Cmd-U: upcaseAtCursor&#13;Cmd-K Cmd-L: downcaseAtCursor&#13;Cmd-K Cmd-Space: setSublimeMark&#13;Cmd-K Cmd-A: selectToSublimeMark&#13;Cmd-K Cmd-W: deleteToSublimeMark&#13;Cmd-K Cmd-X: swapWithSublimeMark&#13;Cmd-K Cmd-Y: sublimeYank&#13;Cmd-K Cmd-G: clearBookmarks&#13;Cmd-K Cmd-C: showInCenter&#13;Shift-Alt-Up: selectLinesUpward&#13;Shift-Alt-Down: selectLinesDownward&#13;Cmd-F3: findUnder&#13;Shift-Cmd-F3: findUnderPrevious&#13;Ctrl-Q: fold&#13;Shift-Cmd-[: fold&#13;Shift-Cmd-]: unfold&#13;Cmd-K Cmd-j: unfoldAll&#13;Cmd-K Cmd-0: unfoldAll&#13;Cmd-H: replace" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">Keymap</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Shift-Tab=AutoIndent</span><span style="clear: both;"></span>
+        <p id="AllLintMess_editor4" class="allLintMess" tabindex="-1" style="font-family: monospace;"></p>
+      </div>
+      <form id="box_editor4" class="cDefaultClosed box_editor4" style="display: block; min-width: 100%; clear: both;" onmousemove="if(this.dataset.lastheight !== this.style.height) {this.dataset.lastheight = this.style.height; editor4.refresh();}">
+        <textarea id="code4" name="code4"></textarea>
+      </form>
+      <div class="h3_box box_editorsMerge">
+        <h3 id="h3_editorsMerge" class="h3opened" onclick="if(this.parentElement.nextElementSibling.style.display === 'none') {this.parentElement.nextElementSibling.style.display = 'block'; this.classList.remove('h3closed'); dv.edit.refresh(); dv.rightOriginal().refresh();} else {this.parentElement.nextElementSibling.style.display = 'none'; this.classList.add('h3closed');}">HTML merge</h3>
+  <select tabindex="-1" id="mySetSpec5" name="SetSpec5" style="margin-left: 10px; max-width: 110px;" onchange="setSpecials([dv.edit, dv.rightOriginal()], this); return false" autocomplete="off">
+    <option value="placeholder">Specials</option>
+    <option value="MiniLeft">Minify-Left</option>
+    <option value="MiniRight">Minify-Right</option>
+    <option value="MiniBoth">Minify-Both</option>
+    <option value="ReparseLeft">Reparse-Left</option>
+    <option value="ReparseRight">Reparse-Right</option>
+    <option value="ReparseBoth">Reparse-Both</option>
+    <option value="ReparseLeftToRight">Reparse-LeftToRight</option>
+    <option value="ReparseRightToLeft">Reparse-RightToLeft</option>
+    <option value="insReturnLeft">insertReturnBettweenTags-Left</option>
+    <option value="insReturnRight">insertReturnBettweenTags-Right</option>
+    <option value="insReturnBoth">insertReturnBettweenTags-Both</option>
+    <option value="delStrLeft">Delete"Strings"Content-Left</option>
+    <option value="delStrRight">Delete"Strings"Content-Right</option>
+    <option value="delStrBoth">Delete"Strings"Content-Both</option>
+    <option value="delStyleLeft">DeleteStylesContent-Left</option>
+    <option value="delStyleRight">DeleteStylesContent-Right</option>
+    <option value="delStyleBoth">DeleteStylesContent-Both</option>
+    <option value="delScriptLeft">DeleteScriptsContent-Left</option>
+    <option value="delScriptRight">DeleteScriptsContent-Right</option>
+    <option value="delScriptBoth">DeleteScriptsContent-Both</option>
+    <option value="delLinkHRefLeft">DeleteLinkHRef-Left</option>
+    <option value="delLinkHRefRight">DeleteLinkHRef-Right</option>
+    <option value="delLinkHRefBoth">DeleteLinkHRef-Both</option>
+    <option value="delScriptSrcLeft">DeleteScriptSrc-Left</option>
+    <option value="delScriptSrcRight">DeleteScriptSrc-Right</option>
+    <option value="delScriptSrcBoth">DeleteScriptSrc-Both</option>
+    <option value="delTxtNodesLeft">DeleteTxtNodes-Left</option>
+    <option value="delTxtNodesRight">DeleteTxtNodes-Right</option>
+    <option value="delTxtNodesBoth">DeleteTxtNodes-Both</option>
+    <option value="get_HTML_SourceCode">get_HTML_SourceCode</option>
+  </select>
+  <select tabindex="-1" id="mySetOpt5" name="SetOpt5" style="margin-left: 10px; max-width: 110px;" onchange="setMyEditorOpt([dv.edit, dv.rightOriginal()], this); return false" autocomplete="off">
+    <option value="placeholder">Options</option>
+    <option value="LWon">LineWrap-ON</option>
+    <option value="LWoff">LineWrap-OFF</option>
+    <option value="STSon">showTrailingSpace-ON</option>
+    <option value="STSoff">showTrailingSpace-OFF</option>
+    <option value="MODEmixed">Mode: mixed</option>
+    <option value="MODEcss">Mode: css</option>
+    <option value="MODEjs">Mode: javascript</option>
+    <option value="MODEjson">Mode: json</option>
+    <option value="MODEhtml">Mode: html</option>
+  </select>
+  <select tabindex="-1" id="mySetOptCommandsLeft" name="SetOptCommandsLeft" style="margin-left: 10px; max-width: 78px;" onchange="commandEditor('mergeleft', this.value); this.options[0].selected = true; return false" autocomplete="off">
+    <option value="placeholder">Cmd-L</option>
+    <option value="autocomplete">autocomplete(editor, getHints, options)</option>
+    <option value="clearBookmarks">clearBookmarks(editor)</option>
+    <option value="clearSearch">clearSearch(editor)</option>
+    <option value="defaultTab">defaultTab(editor)</option>
+    <option value="delCharAfter">delCharAfter(editor)</option>
+    <option value="delCharBefore">delCharBefore(editor)</option>
+    <option value="delGroupAfter">delGroupAfter(editor)</option>
+    <option value="delGroupBefore">delGroupBefore(editor)</option>
+    <option value="delLineLeft">delLineLeft(editor)</option>
+    <option value="delLineRight">delLineRight(editor)</option>
+    <option value="delWordAfter">delWordAfter(editor)</option>
+    <option value="delWordBefore">delWordBefore(editor)</option>
+    <option value="delWrappedLineLeft">delWrappedLineLeft(editor)</option>
+    <option value="delWrappedLineRight">delWrappedLineRight(editor)</option>
+    <option value="deleteLine">deleteLine(editor)</option>
+    <option value="deleteToSublimeMark">deleteToSublimeMark(editor)</option>
+    <option value="downcaseAtCursor">downcaseAtCursor(editor)</option>
+    <option value="duplicateLine">duplicateLine(editor)</option>
+    <option value="find">find(editor)</option>
+    <option value="findAllUnder">findAllUnder(editor)</option>
+    <option value="findNext">findNext(editor, rev)</option>
+    <option value="findPrev">findPrev(editor)</option>
+    <option value="findUnder">findUnder(editor)</option>
+    <option value="findUnderPrevious">findUnderPrevious(editor)</option>
+    <option value="fold">fold(editor)</option>
+    <option value="foldAll">foldAll(editor)</option>
+    <option value="goCharLeft">goCharLeft(editor)</option>
+    <option value="goCharRight">goCharRight(editor)</option>
+    <option value="goColumnLeft">goColumnLeft(editor)</option>
+    <option value="goColumnRight">goColumnRight(editor)</option>
+    <option value="goDocEnd">goDocEnd(editor)</option>
+    <option value="goDocStart">goDocStart(editor)</option>
+    <option value="goGroupLeft">goGroupLeft(editor)</option>
+    <option value="goGroupRight">goGroupRight(editor)</option>
+    <option value="goLineDown">goLineDown(editor)</option>
+    <option value="goLineEnd">goLineEnd(editor)</option>
+    <option value="goLineLeft">goLineLeft(editor)</option>
+    <option value="goLineLeftSmart">goLineLeftSmart(editor)</option>
+    <option value="goLineRight">goLineRight(editor)</option>
+    <option value="goLineStart">goLineStart(editor)</option>
+    <option value="goLineStartSmart">goLineStartSmart(editor)</option>
+    <option value="goLineUp">goLineUp(editor)</option>
+    <option value="goNextDiff">goNextDiff(editor)</option>
+    <option value="goPageDown">goPageDown(editor)</option>
+    <option value="goPageUp">goPageUp(editor)</option>
+    <option value="goPrevDiff">goPrevDiff(editor)</option>
+    <option value="goSubwordLeft">goSubwordLeft(editor)</option>
+    <option value="goSubwordRight">goSubwordRight(editor)</option>
+    <option value="goToBracket">goToBracket(editor)</option>
+    <option value="goWordLeft">goWordLeft(editor)</option>
+    <option value="goWordRight">goWordRight(editor)</option>
+    <option value="indentAuto">indentAuto(editor)</option>
+    <option value="indentLess">indentLess(editor)</option>
+    <option value="indentMore">indentMore(editor)</option>
+    <option value="insertLineAfter">insertLineAfter(editor)</option>
+    <option value="insertLineBefore">insertLineBefore(editor)</option>
+    <option value="insertSoftTab">insertSoftTab(editor)</option>
+    <option value="insertTab">insertTab(editor)</option>
+    <option value="joinLines">joinLines(editor)</option>
+    <option value="killLine">killLine(editor)</option>
+    <option value="newlineAndIndent">newlineAndIndent(editor)</option>
+    <option value="nextBookmark">nextBookmark(editor)</option>
+    <option value="prevBookmark">prevBookmark(editor)</option>
+    <option value="redo">redo(editor)</option>
+    <option value="redoSelection">redoSelection(editor)</option>
+    <option value="replace">replace(editor, all)</option>
+    <option value="replaceAll">replaceAll(editor)</option>
+    <option value="scrollLineDown">scrollLineDown(editor)</option>
+    <option value="scrollLineUp">scrollLineUp(editor)</option>
+    <option value="selectAll">selectAll(editor)</option>
+    <option value="selectBetweenBrackets">selectBetweenBrackets(editor)</option>
+    <option value="selectBookmarks">selectBookmarks(editor)</option>
+    <option value="selectLine">selectLine(editor)</option>
+    <option value="selectLinesDownward">selectLinesDownward(editor)</option>
+    <option value="selectLinesUpward">selectLinesUpward(editor)</option>
+    <option value="selectNextOccurrence">selectNextOccurrence(editor)</option>
+    <option value="selectScope">selectScope(editor)</option>
+    <option value="selectToSublimeMark">selectToSublimeMark(editor)</option>
+    <option value="setSublimeMark">setSublimeMark(editor)</option>
+    <option value="showInCenter">showInCenter(editor)</option>
+    <option value="singleSelection">singleSelection(editor)</option>
+    <option value="singleSelectionTop">singleSelectionTop(editor)</option>
+    <option value="smartBackspace">smartBackspace(editor)</option>
+    <option value="sortLines">sortLines(editor)</option>
+    <option value="sortLinesInsensitive">sortLinesInsensitive(editor)</option>
+    <option value="splitSelectionByLine">splitSelectionByLine(editor)</option>
+    <option value="sublimeYank">sublimeYank(editor)</option>
+    <option value="swapLineDown">swapLineDown(editor)</option>
+    <option value="swapLineUp">swapLineUp(editor)</option>
+    <option value="swapWithSublimeMark">swapWithSublimeMark(editor)</option>
+    <option value="toMatchingTag">toMatchingTag(editor)</option>
+    <option value="toggleBookmark">toggleBookmark(editor)</option>
+    <option value="toggleComment">toggleComment(editor)</option>
+    <option value="toggleFold">toggleFold(editor)</option>
+    <option value="toggleOverwrite">toggleOverwrite(editor)</option>
+    <option value="transposeChars">transposeChars(editor)</option>
+    <option value="undo">undo(editor)</option>
+    <option value="undoSelection">undoSelection(editor)</option>
+    <option value="unfold">unfold(editor)</option>
+    <option value="unfoldAll">unfoldAll(editor)</option>
+    <option value="upcaseAtCursor">upcaseAtCursor(editor)</option>
+    <option value="wrapLines">wrapLines(editor)</option>
+  </select>
+  <select tabindex="-1" id="mySetOptCommandsRight" name="SetOptCommandsRight" style="margin-left: 10px; max-width: 78px;" onchange="commandEditor('mergeright', this.value); this.options[0].selected = true; return false" autocomplete="off">
+    <option value="placeholder">Cmd-R</option>
+    <option value="autocomplete">autocomplete(editor, getHints, options)</option>
+    <option value="clearBookmarks">clearBookmarks(editor)</option>
+    <option value="clearSearch">clearSearch(editor)</option>
+    <option value="defaultTab">defaultTab(editor)</option>
+    <option value="delCharAfter">delCharAfter(editor)</option>
+    <option value="delCharBefore">delCharBefore(editor)</option>
+    <option value="delGroupAfter">delGroupAfter(editor)</option>
+    <option value="delGroupBefore">delGroupBefore(editor)</option>
+    <option value="delLineLeft">delLineLeft(editor)</option>
+    <option value="delLineRight">delLineRight(editor)</option>
+    <option value="delWordAfter">delWordAfter(editor)</option>
+    <option value="delWordBefore">delWordBefore(editor)</option>
+    <option value="delWrappedLineLeft">delWrappedLineLeft(editor)</option>
+    <option value="delWrappedLineRight">delWrappedLineRight(editor)</option>
+    <option value="deleteLine">deleteLine(editor)</option>
+    <option value="deleteToSublimeMark">deleteToSublimeMark(editor)</option>
+    <option value="downcaseAtCursor">downcaseAtCursor(editor)</option>
+    <option value="duplicateLine">duplicateLine(editor)</option>
+    <option value="find">find(editor)</option>
+    <option value="findAllUnder">findAllUnder(editor)</option>
+    <option value="findNext">findNext(editor, rev)</option>
+    <option value="findPrev">findPrev(editor)</option>
+    <option value="findUnder">findUnder(editor)</option>
+    <option value="findUnderPrevious">findUnderPrevious(editor)</option>
+    <option value="fold">fold(editor)</option>
+    <option value="foldAll">foldAll(editor)</option>
+    <option value="goCharLeft">goCharLeft(editor)</option>
+    <option value="goCharRight">goCharRight(editor)</option>
+    <option value="goColumnLeft">goColumnLeft(editor)</option>
+    <option value="goColumnRight">goColumnRight(editor)</option>
+    <option value="goDocEnd">goDocEnd(editor)</option>
+    <option value="goDocStart">goDocStart(editor)</option>
+    <option value="goGroupLeft">goGroupLeft(editor)</option>
+    <option value="goGroupRight">goGroupRight(editor)</option>
+    <option value="goLineDown">goLineDown(editor)</option>
+    <option value="goLineEnd">goLineEnd(editor)</option>
+    <option value="goLineLeft">goLineLeft(editor)</option>
+    <option value="goLineLeftSmart">goLineLeftSmart(editor)</option>
+    <option value="goLineRight">goLineRight(editor)</option>
+    <option value="goLineStart">goLineStart(editor)</option>
+    <option value="goLineStartSmart">goLineStartSmart(editor)</option>
+    <option value="goLineUp">goLineUp(editor)</option>
+    <option value="goNextDiff">goNextDiff(editor)</option>
+    <option value="goPageDown">goPageDown(editor)</option>
+    <option value="goPageUp">goPageUp(editor)</option>
+    <option value="goPrevDiff">goPrevDiff(editor)</option>
+    <option value="goSubwordLeft">goSubwordLeft(editor)</option>
+    <option value="goSubwordRight">goSubwordRight(editor)</option>
+    <option value="goToBracket">goToBracket(editor)</option>
+    <option value="goWordLeft">goWordLeft(editor)</option>
+    <option value="goWordRight">goWordRight(editor)</option>
+    <option value="indentAuto">indentAuto(editor)</option>
+    <option value="indentLess">indentLess(editor)</option>
+    <option value="indentMore">indentMore(editor)</option>
+    <option value="insertLineAfter">insertLineAfter(editor)</option>
+    <option value="insertLineBefore">insertLineBefore(editor)</option>
+    <option value="insertSoftTab">insertSoftTab(editor)</option>
+    <option value="insertTab">insertTab(editor)</option>
+    <option value="joinLines">joinLines(editor)</option>
+    <option value="killLine">killLine(editor)</option>
+    <option value="newlineAndIndent">newlineAndIndent(editor)</option>
+    <option value="nextBookmark">nextBookmark(editor)</option>
+    <option value="prevBookmark">prevBookmark(editor)</option>
+    <option value="redo">redo(editor)</option>
+    <option value="redoSelection">redoSelection(editor)</option>
+    <option value="replace">replace(editor, all)</option>
+    <option value="replaceAll">replaceAll(editor)</option>
+    <option value="scrollLineDown">scrollLineDown(editor)</option>
+    <option value="scrollLineUp">scrollLineUp(editor)</option>
+    <option value="selectAll">selectAll(editor)</option>
+    <option value="selectBetweenBrackets">selectBetweenBrackets(editor)</option>
+    <option value="selectBookmarks">selectBookmarks(editor)</option>
+    <option value="selectLine">selectLine(editor)</option>
+    <option value="selectLinesDownward">selectLinesDownward(editor)</option>
+    <option value="selectLinesUpward">selectLinesUpward(editor)</option>
+    <option value="selectNextOccurrence">selectNextOccurrence(editor)</option>
+    <option value="selectScope">selectScope(editor)</option>
+    <option value="selectToSublimeMark">selectToSublimeMark(editor)</option>
+    <option value="setSublimeMark">setSublimeMark(editor)</option>
+    <option value="showInCenter">showInCenter(editor)</option>
+    <option value="singleSelection">singleSelection(editor)</option>
+    <option value="singleSelectionTop">singleSelectionTop(editor)</option>
+    <option value="smartBackspace">smartBackspace(editor)</option>
+    <option value="sortLines">sortLines(editor)</option>
+    <option value="sortLinesInsensitive">sortLinesInsensitive(editor)</option>
+    <option value="splitSelectionByLine">splitSelectionByLine(editor)</option>
+    <option value="sublimeYank">sublimeYank(editor)</option>
+    <option value="swapLineDown">swapLineDown(editor)</option>
+    <option value="swapLineUp">swapLineUp(editor)</option>
+    <option value="swapWithSublimeMark">swapWithSublimeMark(editor)</option>
+    <option value="toMatchingTag">toMatchingTag(editor)</option>
+    <option value="toggleBookmark">toggleBookmark(editor)</option>
+    <option value="toggleComment">toggleComment(editor)</option>
+    <option value="toggleFold">toggleFold(editor)</option>
+    <option value="toggleOverwrite">toggleOverwrite(editor)</option>
+    <option value="transposeChars">transposeChars(editor)</option>
+    <option value="undo">undo(editor)</option>
+    <option value="undoSelection">undoSelection(editor)</option>
+    <option value="unfold">unfold(editor)</option>
+    <option value="unfoldAll">unfoldAll(editor)</option>
+    <option value="upcaseAtCursor">upcaseAtCursor(editor)</option>
+    <option value="wrapLines">wrapLines(editor)</option>
+  </select><span title="Formatting-Left" onclick="autoFormatSelection(dv.edit); return false" style="cursor: pointer; margin-left: 10px; opacity: 1; font-size: 12px;">&#128154;</span><span title="Formatting-Right" onclick="autoFormatSelection(dv.rightOriginal()); return false" style="cursor: pointer; margin-left: 10px; opacity: 1; font-size: 12px;">&#128153;</span><span title="Ctrl-F / Cmd-F&#13;Start searching&#13;&#13;Ctrl-G / Cmd-G&#13;Find next&#13;&#13;Shift-Ctrl-G / Shift-Cmd-G&#13;Find previous&#13;&#13;Shift-Ctrl-F / Cmd-Option-F&#13;Replace&#13;&#13;Shift-Ctrl-R / Shift-Cmd-Option-F&#13;Replace all" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">&#128269;</span>
+  <span title="Alt-Left: goSubwordLeft&#13;Alt-Right: goSubwordRight&#13;Cmd-Up: scrollLineUp&#13;Cmd-Down: scrollLineDown&#13;Shift-Cmd-L: splitSelectionByLine&#13;Alt-Tab: indentLess&#13;Esc: singleSelectionTop&#13;Cmd-L: selectLine&#13;Shift-Cmd-K: deleteLine&#13;Cmd-Enter: insertLineAfter&#13;Shift-Cmd-Enter: insertLineBefore&#13;Cmd-D: selectNextOccurrence&#13;Shift-Cmd-Space: selectScope&#13;Shift-Cmd-M: selectBetweenBrackets&#13;Cmd-M: goToBracket&#13;Cmd-Ctrl-Up: swapLineUp&#13;Cmd-Ctrl-Down: swapLineDown&#13;Cmd-/: toggleComment&#13;Cmd-J: joinLines&#13;Ctrl-J: jumpToMatchingTag&#13;Shift-Cmd-D: duplicateLine&#13;Cmd-T: transposeChars&#13;F9: sortLines&#13;Cmd-F9: sortLinesInsensitive&#13;F2: nextBookmark&#13;Shift-F2: prevBookmark&#13;Cmd-F2: toggleBookmark&#13;Shift-Cmd-F2: clearBookmarks&#13;Alt-F2: selectBookmarks&#13;Alt-Q: wrapLines&#13;Cmd-K Cmd-Backspace: delLineLeft&#13;Backspace: smartBackspace&#13;Cmd-K Cmd-K: delLineRight&#13;Cmd-K Cmd-U: upcaseAtCursor&#13;Cmd-K Cmd-L: downcaseAtCursor&#13;Cmd-K Cmd-Space: setSublimeMark&#13;Cmd-K Cmd-A: selectToSublimeMark&#13;Cmd-K Cmd-W: deleteToSublimeMark&#13;Cmd-K Cmd-X: swapWithSublimeMark&#13;Cmd-K Cmd-Y: sublimeYank&#13;Cmd-K Cmd-G: clearBookmarks&#13;Cmd-K Cmd-C: showInCenter&#13;Shift-Alt-Up: selectLinesUpward&#13;Shift-Alt-Down: selectLinesDownward&#13;Cmd-F3: findUnder&#13;Shift-Cmd-F3: findUnderPrevious&#13;Ctrl-Q: fold&#13;Shift-Cmd-[: fold&#13;Shift-Cmd-]: unfold&#13;Cmd-K Cmd-j: unfoldAll&#13;Cmd-K Cmd-0: unfoldAll&#13;Cmd-H: replace" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">Keymap</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Shift-Tab=AutoIndent</span><span style="clear: both;"></span>
+      </div>
+      <div id="box_editorsMerge" class="cDefaultClosed box_editorsMerge" style="display: block; min-width: 100%; clear: both;" onmousemove="if(this.dataset.lastheight !== this.style.height) {this.dataset.lastheight = this.style.height; dv.edit.refresh(); dv.rightOriginal().refresh();}"></div>
+      <div class="h3_box box_editor1">
+        <h3 id="h3_editor1" class="h3opened" onclick="if(this.parentElement.nextElementSibling.style.display === 'none') {this.parentElement.nextElementSibling.style.display = 'block'; this.parentElement.nextElementSibling.nextElementSibling.style.display = 'block'; this.classList.remove('h3closed'); editor1.refresh();} else {this.parentElement.nextElementSibling.style.display = 'none'; this.parentElement.nextElementSibling.nextElementSibling.style.display = 'none'; this.classList.add('h3closed');}">HTML</h3>
+  <select tabindex="-1" id="mySetSpec1" name="SetSpec1" style="margin-left: 10px; max-width: 110px;" onchange="setSpecials([editor1], this); return false" autocomplete="off">
+    <option value="placeholder">Specials</option>
+    <option value="MiniBoth">Minify</option>
+    <option value="ReparseBoth">Reparse</option>
+    <option value="insReturnBoth">insertReturnBettweenTags</option>
+    <option value="delStrBoth">DeleteStringsStylesScripts</option>
+    <option value="delStyleBoth">DeleteStylesContent</option>
+    <option value="delScriptBoth">DeleteScriptsContent</option>
+    <option value="delLinkHRefBoth">DeleteLinkHRef</option>
+    <option value="delScriptSrcBoth">DeleteScriptSrc</option>
+    <option value="delTxtNodesBoth">DeleteTxtNodes</option>
+  </select>
+  <select tabindex="-1" id="mySetOpt1" name="SetOpt1" style="margin-left: 10px; max-width: 110px;" onchange="setMyEditorOpt([editor1], this); return false" autocomplete="off">
+    <option value="placeholder">Options</option>
+    <option value="LWon">LineWrap-ON</option>
+    <option value="LWoff">LineWrap-OFF</option>
+    <option value="STSon">showTrailingSpace-ON</option>
+    <option value="STSoff">showTrailingSpace-OFF</option>
+    <option value="MODEmixed">Mode: mixed</option>
+    <option value="MODEcss">Mode: css</option>
+    <option value="MODEjs">Mode: javascript</option>
+    <option value="MODEjson">Mode: json</option>
+    <option value="MODEhtml">Mode: html</option>
+  </select>
+  <select tabindex="-1" id="mySetOptCommandsHTML" name="SetOptCommandsHTML" style="margin-left: 10px; max-width: 78px;" onchange="commandEditor('html', this.value); this.options[0].selected = true; return false" autocomplete="off">
+    <option value="placeholder">Cmd</option>
+    <option value="autocomplete">autocomplete(editor, getHints, options)</option>
+    <option value="clearBookmarks">clearBookmarks(editor)</option>
+    <option value="clearSearch">clearSearch(editor)</option>
+    <option value="defaultTab">defaultTab(editor)</option>
+    <option value="delCharAfter">delCharAfter(editor)</option>
+    <option value="delCharBefore">delCharBefore(editor)</option>
+    <option value="delGroupAfter">delGroupAfter(editor)</option>
+    <option value="delGroupBefore">delGroupBefore(editor)</option>
+    <option value="delLineLeft">delLineLeft(editor)</option>
+    <option value="delLineRight">delLineRight(editor)</option>
+    <option value="delWordAfter">delWordAfter(editor)</option>
+    <option value="delWordBefore">delWordBefore(editor)</option>
+    <option value="delWrappedLineLeft">delWrappedLineLeft(editor)</option>
+    <option value="delWrappedLineRight">delWrappedLineRight(editor)</option>
+    <option value="deleteLine">deleteLine(editor)</option>
+    <option value="deleteToSublimeMark">deleteToSublimeMark(editor)</option>
+    <option value="downcaseAtCursor">downcaseAtCursor(editor)</option>
+    <option value="duplicateLine">duplicateLine(editor)</option>
+    <option value="find">find(editor)</option>
+    <option value="findAllUnder">findAllUnder(editor)</option>
+    <option value="findNext">findNext(editor, rev)</option>
+    <option value="findPrev">findPrev(editor)</option>
+    <option value="findUnder">findUnder(editor)</option>
+    <option value="findUnderPrevious">findUnderPrevious(editor)</option>
+    <option value="fold">fold(editor)</option>
+    <option value="foldAll">foldAll(editor)</option>
+    <option value="goCharLeft">goCharLeft(editor)</option>
+    <option value="goCharRight">goCharRight(editor)</option>
+    <option value="goColumnLeft">goColumnLeft(editor)</option>
+    <option value="goColumnRight">goColumnRight(editor)</option>
+    <option value="goDocEnd">goDocEnd(editor)</option>
+    <option value="goDocStart">goDocStart(editor)</option>
+    <option value="goGroupLeft">goGroupLeft(editor)</option>
+    <option value="goGroupRight">goGroupRight(editor)</option>
+    <option value="goLineDown">goLineDown(editor)</option>
+    <option value="goLineEnd">goLineEnd(editor)</option>
+    <option value="goLineLeft">goLineLeft(editor)</option>
+    <option value="goLineLeftSmart">goLineLeftSmart(editor)</option>
+    <option value="goLineRight">goLineRight(editor)</option>
+    <option value="goLineStart">goLineStart(editor)</option>
+    <option value="goLineStartSmart">goLineStartSmart(editor)</option>
+    <option value="goLineUp">goLineUp(editor)</option>
+    <option value="goNextDiff">goNextDiff(editor)</option>
+    <option value="goPageDown">goPageDown(editor)</option>
+    <option value="goPageUp">goPageUp(editor)</option>
+    <option value="goPrevDiff">goPrevDiff(editor)</option>
+    <option value="goSubwordLeft">goSubwordLeft(editor)</option>
+    <option value="goSubwordRight">goSubwordRight(editor)</option>
+    <option value="goToBracket">goToBracket(editor)</option>
+    <option value="goWordLeft">goWordLeft(editor)</option>
+    <option value="goWordRight">goWordRight(editor)</option>
+    <option value="indentAuto">indentAuto(editor)</option>
+    <option value="indentLess">indentLess(editor)</option>
+    <option value="indentMore">indentMore(editor)</option>
+    <option value="insertLineAfter">insertLineAfter(editor)</option>
+    <option value="insertLineBefore">insertLineBefore(editor)</option>
+    <option value="insertSoftTab">insertSoftTab(editor)</option>
+    <option value="insertTab">insertTab(editor)</option>
+    <option value="joinLines">joinLines(editor)</option>
+    <option value="killLine">killLine(editor)</option>
+    <option value="newlineAndIndent">newlineAndIndent(editor)</option>
+    <option value="nextBookmark">nextBookmark(editor)</option>
+    <option value="prevBookmark">prevBookmark(editor)</option>
+    <option value="redo">redo(editor)</option>
+    <option value="redoSelection">redoSelection(editor)</option>
+    <option value="replace">replace(editor, all)</option>
+    <option value="replaceAll">replaceAll(editor)</option>
+    <option value="scrollLineDown">scrollLineDown(editor)</option>
+    <option value="scrollLineUp">scrollLineUp(editor)</option>
+    <option value="selectAll">selectAll(editor)</option>
+    <option value="selectBetweenBrackets">selectBetweenBrackets(editor)</option>
+    <option value="selectBookmarks">selectBookmarks(editor)</option>
+    <option value="selectLine">selectLine(editor)</option>
+    <option value="selectLinesDownward">selectLinesDownward(editor)</option>
+    <option value="selectLinesUpward">selectLinesUpward(editor)</option>
+    <option value="selectNextOccurrence">selectNextOccurrence(editor)</option>
+    <option value="selectScope">selectScope(editor)</option>
+    <option value="selectToSublimeMark">selectToSublimeMark(editor)</option>
+    <option value="setSublimeMark">setSublimeMark(editor)</option>
+    <option value="showInCenter">showInCenter(editor)</option>
+    <option value="singleSelection">singleSelection(editor)</option>
+    <option value="singleSelectionTop">singleSelectionTop(editor)</option>
+    <option value="smartBackspace">smartBackspace(editor)</option>
+    <option value="sortLines">sortLines(editor)</option>
+    <option value="sortLinesInsensitive">sortLinesInsensitive(editor)</option>
+    <option value="splitSelectionByLine">splitSelectionByLine(editor)</option>
+    <option value="sublimeYank">sublimeYank(editor)</option>
+    <option value="swapLineDown">swapLineDown(editor)</option>
+    <option value="swapLineUp">swapLineUp(editor)</option>
+    <option value="swapWithSublimeMark">swapWithSublimeMark(editor)</option>
+    <option value="toMatchingTag">toMatchingTag(editor)</option>
+    <option value="toggleBookmark">toggleBookmark(editor)</option>
+    <option value="toggleComment">toggleComment(editor)</option>
+    <option value="toggleFold">toggleFold(editor)</option>
+    <option value="toggleOverwrite">toggleOverwrite(editor)</option>
+    <option value="transposeChars">transposeChars(editor)</option>
+    <option value="undo">undo(editor)</option>
+    <option value="undoSelection">undoSelection(editor)</option>
+    <option value="unfold">unfold(editor)</option>
+    <option value="unfoldAll">unfoldAll(editor)</option>
+    <option value="upcaseAtCursor">upcaseAtCursor(editor)</option>
+    <option value="wrapLines">wrapLines(editor)</option>
+  </select><span title="Formatting" onclick="autoFormatSelection(editor1); return false" style="cursor: pointer; margin-left: 10px; opacity: 1; font-size: 12px;">&#128154;</span><span title="Ctrl-F / Cmd-F&#13;Start searching&#13;&#13;Ctrl-G / Cmd-G&#13;Find next&#13;&#13;Shift-Ctrl-G / Shift-Cmd-G&#13;Find previous&#13;&#13;Shift-Ctrl-F / Cmd-Option-F&#13;Replace&#13;&#13;Shift-Ctrl-R / Shift-Cmd-Option-F&#13;Replace all" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">&#128269;</span>
+  <span title="Alt-Left: goSubwordLeft&#13;Alt-Right: goSubwordRight&#13;Cmd-Up: scrollLineUp&#13;Cmd-Down: scrollLineDown&#13;Shift-Cmd-L: splitSelectionByLine&#13;Alt-Tab: indentLess&#13;Esc: singleSelectionTop&#13;Cmd-L: selectLine&#13;Shift-Cmd-K: deleteLine&#13;Cmd-Enter: insertLineAfter&#13;Shift-Cmd-Enter: insertLineBefore&#13;Cmd-D: selectNextOccurrence&#13;Shift-Cmd-Space: selectScope&#13;Shift-Cmd-M: selectBetweenBrackets&#13;Cmd-M: goToBracket&#13;Cmd-Ctrl-Up: swapLineUp&#13;Cmd-Ctrl-Down: swapLineDown&#13;Cmd-/: toggleComment&#13;Cmd-J: joinLines&#13;Ctrl-J: jumpToMatchingTag&#13;Shift-Cmd-D: duplicateLine&#13;Cmd-T: transposeChars&#13;F9: sortLines&#13;Cmd-F9: sortLinesInsensitive&#13;F2: nextBookmark&#13;Shift-F2: prevBookmark&#13;Cmd-F2: toggleBookmark&#13;Shift-Cmd-F2: clearBookmarks&#13;Alt-F2: selectBookmarks&#13;Alt-Q: wrapLines&#13;Cmd-K Cmd-Backspace: delLineLeft&#13;Backspace: smartBackspace&#13;Cmd-K Cmd-K: delLineRight&#13;Cmd-K Cmd-U: upcaseAtCursor&#13;Cmd-K Cmd-L: downcaseAtCursor&#13;Cmd-K Cmd-Space: setSublimeMark&#13;Cmd-K Cmd-A: selectToSublimeMark&#13;Cmd-K Cmd-W: deleteToSublimeMark&#13;Cmd-K Cmd-X: swapWithSublimeMark&#13;Cmd-K Cmd-Y: sublimeYank&#13;Cmd-K Cmd-G: clearBookmarks&#13;Cmd-K Cmd-C: showInCenter&#13;Shift-Alt-Up: selectLinesUpward&#13;Shift-Alt-Down: selectLinesDownward&#13;Cmd-F3: findUnder&#13;Shift-Cmd-F3: findUnderPrevious&#13;Ctrl-Q: fold&#13;Shift-Cmd-[: fold&#13;Shift-Cmd-]: unfold&#13;Cmd-K Cmd-j: unfoldAll&#13;Cmd-K Cmd-0: unfoldAll&#13;Cmd-H: replace" style="margin-left: 10px; opacity: 0.3; font-size: 12px;">Keymap</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Ctrl-Space=AutoComplete</span><span style="color: rgb(188, 188, 188); font-size: 12px; font-weight: normal; float: right; padding-left: 5px; padding-right: 10px; padding-top: 4px;">Shift-Tab=AutoIndent</span><span style="clear: both;"></span>
+      </div>
+      <form id="box_editor1" class="cDefaultClosed box_editor1" style="display: block; min-width: 100%; clear: both;" onmousemove="if(this.dataset.lastheight !== this.style.height) {this.dataset.lastheight = this.style.height; editor1.refresh();}">
+        <textarea id="code1" name="code1"></textarea>
+      </form>
+      <iframe id="box_editor1preview" class="cDefaultClosed" style="display: block; width: 99.2%; width: calc(100% - 5px); height: 190%; min-height: 190%; min-width: calc(100% - 8px);"></iframe>
+      <script>
+        // Define an extended mixed-mode that understands vbscript and
+        // leaves mustache/handlebars embedded templates in html mode
+        var mixedMode = {
+          name: "htmlmixed",
+          scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
+                         mode: null},
+                        {matches: /(text|application)\/(x-)?vb(a|script)/i,
+                         mode: "vbscript"}]
+        };
+        var editor1 = CodeMirror.fromTextArea(document.getElementById("code1"), {
+          mode: mixedMode,
+          matchTags: {bothTags: true},
+          showTrailingSpace: true,
+          selectionPointer: true,
+          styleActiveLine: true,
+          lineNumbers: true,
+          lineWrapping: false,
+          extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }, "Ctrl-Space": "autocomplete", "Ctrl-J": "toMatchingTag"},
+          keyMap: "sublime",
+          foldGutter: true,
+          gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+          indentUnit: 2,
+          smartIndent: true,
+          indentWithTabs: false,
+          tabSize: 2,
+          scrollbarStyle: "simple"
+        });
+        var delay;
+        editor1.on("change", function() {
+          clearTimeout(delay);
+          delay = window.setTimeout(updatePreview, 1500);
+        });
+        function updatePreview() {
+          var previewFrame = document.getElementById('box_editor1preview');
+          var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+          preview.open();
+          preview.write(editor1.getValue());
+          preview.close();
+        }
+        window.setTimeout(updatePreview, 300);
+        // Define an extended css-mode
+        var editor2 = CodeMirror.fromTextArea(document.getElementById("code2"), {
+          mode: "css",
+          showTrailingSpace: true,
+          styleActiveLine: true,
+          lineNumbers: true,
+          lineWrapping: false,
+          extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }, "Ctrl-Space": "autocomplete"},
+          keyMap: "sublime",
+          foldGutter: true,
+          gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lint-markers"],
+          indentUnit: 2,
+          smartIndent: true,
+          indentWithTabs: false,
+          tabSize: 2,
+          lint: true,
+          scrollbarStyle: "simple"
+        });
+        // Define an extended javascript-mode
+        var editor3 = CodeMirror.fromTextArea(document.getElementById("code3"), {
+          mode: {name: "javascript", globalVars: true},
+          showTrailingSpace: true,
+          styleActiveLine: true,
+          lineNumbers: true,
+          lineWrapping: false,
+          extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }, "Ctrl-Space": "autocomplete"},
+          keyMap: "sublime",
+          matchBrackets: true,
+          foldGutter: true,
+          gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lint-markers"],
+          indentUnit: 2,
+          smartIndent: true,
+          indentWithTabs: false,
+          tabSize: 2,
+          electricChars: true,
+          lint: true,
+          scrollbarStyle: "simple"
+        });
+        // Define an extended json-mode
+        var editor4 = CodeMirror.fromTextArea(document.getElementById("code4"), {
+          mode: "application/json",
+          showTrailingSpace: true,
+          styleActiveLine: true,
+          lineNumbers: true,
+          lineWrapping: false,
+          extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
+          keyMap: "sublime",
+          foldGutter: true,
+          gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter", "CodeMirror-lint-markers"],
+          completeSingle: false,
+          indentUnit: 2,
+          smartIndent: true,
+          indentWithTabs: false,
+          tabSize: 2,
+          lint: true,
+          scrollbarStyle: "simple"
+        });
+      </script>
+      <script>
+        var value, orig1, orig2, dv, panes = 2, highlight = true, connect = null, collapse = false;
+        function initUI() {
+          if (value == null) return;
+          var target = document.getElementById("box_editorsMerge");
+          target.innerHTML = "";
+          dv = CodeMirror.MergeView(target, {
+            value: value,
+            origLeft: panes == 3 ? orig1 : null,
+            orig: orig2,
+            lineNumbers: true,
+            lineWrapping: false,
+            mode: "text/html",
+            showTrailingSpace: true,
+            selectionPointer: true,
+            styleActiveLine: true,
+            matchTags: {bothTags: true},
+            highlightDifferences: highlight,
+            connect: connect,
+            collapseIdentical: collapse,
+            allowEditingOriginals: true,
+            keyMap: "sublime",
+            indentUnit: 2,
+            smartIndent: true,
+            indentWithTabs: false,
+            tabSize: 2,
+            scrollbarStyle: "simple"
+          });
+        }
+        function toggleDifferences() {
+          dv.setShowDifferences(highlight = !highlight);
+        }
+        window.onload = function() {
+          value = "";
+          orig1 = "";
+          orig2 = "";
+          initUI();
+        };
+        function mergeViewHeight(mergeView) {
+          function editorHeight(editor) {
+            if (!editor) return 0;
+            return editor.getScrollInfo().height;
+          }
+          return Math.max(editorHeight(mergeView.leftOriginal()),
+                          editorHeight(mergeView.editor()),
+                          editorHeight(mergeView.rightOriginal()));
+        }
+        function resize(mergeView) {
+          var height = mergeViewHeight(mergeView);
+          for(;;) {
+            if (mergeView.leftOriginal()) mergeView.leftOriginal().setSize(null, height);
+            mergeView.editor().setSize(null, height);
+            if (mergeView.rightOriginal()) mergeView.rightOriginal().setSize(null, height);
+            var newHeight = mergeViewHeight(mergeView);
+            if (newHeight >= height) break;
+            else height = newHeight;
+          }
+          mergeView.wrap.style.height = height + "px";
+          mergeView.leftOriginal().refresh();
+          mergeView.rightOriginal().refresh();
+        }
+      </script>
+
+      <script>
+        /* ========= /2/lib/util/formatting.js ========= */
+        /* ======
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+          lineNumbers: true,
+          mode: "htmlmixed"
+        });
+        CodeMirror.commands["selectAll"](editor);
+        ====== */
+        function getSelectedRange(myEditor) {
+          return { from: myEditor.getCursor(true), to: myEditor.getCursor(false) };
+        }
+        function getAllRange(myEditor) {
+          return { from: myEditor.posFromIndex(0), to: myEditor.posFromIndex() };
+        }
+        function autoFormatSelection(myEditor) {
+          var range = getSelectedRange(myEditor);
+          myEditor.autoFormatRange(range.from, range.to);
+        }
+        function autoFormatAll(myEditor) {
+          var range = getAllRange(myEditor);
+          myEditor.autoFormatRange(range.from, range.to);
+        }
+        function commentSelection(myEditor, isComment) {
+          var range = getSelectedRange(myEditor);
+          myEditor.commentRange(isComment, range.from, range.to);
+        }
+        /* ============================================ */
+      </script>
+    </div>
+    <!-- CM ENDE -->
+    <div style="clear: both;"></div>
+    <iframe id="testFrame" src="" type="text/plain" style="display: none;"></iframe>
+  </body>
+</html>
