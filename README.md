@@ -4,20 +4,50 @@ This demo can used as webdev-workbench or as small webdev-helpertool  or for oth
 
 This is just a rudimentary work to pick a few bites or to understand processes and solutions. Preparations are intended to fully integrate an app (e.g. 4D) outside the web area. Prepared JavaScript functions to execute CodeMirror actions via e.g. a 4D command like this:
 ```
-// insertInEditor(myEditorName, mySrc)
+// JS: function insertInEditor(myEditorName, mySrc)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"insertInEditor";$resultBool;"mergeleft";$contentText)
 ```
 ```
+// JS: function setBodyBGColor(myBGColor)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"setBodyBGColor";$resultBool;"#f7f3f7")
 ```
 ```
-// insertAnyStyles(myCSS, myID)
+// JS: function insertAnyStyles(myCSS, myID)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"insertAnyStyles";$resultBool;$styles;"mySpecStyles1")
 ```
 ```
-// setEditorHeight(myEditorName, myHeight)
+// JS: function setEditorHeight(myEditorName, myHeight)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"setEditorHeight";$resultBool;"merge";"calc";"3")
 
+```
+```
+function replaceTextFragments(myEl, myOldTxt, myNewTxt)
+function setMyEditorOpt(myEditor, mySel)
+function setSpecials(myEditor, mySel)
+function commandEditor(myEditorName, myCommand, myP1, myP2)
+function optionEditor(myEditorName, myOpt, myP1, myP2, myP3, myP4, myP5)
+function toggleShowHide(mySel)
+function showBox(myName)
+function hideBox(myName)
+function insertSource(mySrc)
+function mergeWith(mySrc, myLeftRight)
+function refreshEditor(myEditorName)
+function selectAllEditor(myEditorName)
+function formatSelection(myEditorName)
+function formatAll(myEditorName)
+function openBox(myBoxName)
+function closeBox(myBoxName)
+function updatePreview()
+function initUI()
+function toggleDifferences()
+function mergeViewHeight(mergeView)
+function resize(mergeView)
+function getSelectedRange(myEditor)
+function getAllRange(myEditor)
+function autoFormatSelection(myEditor)
+function autoFormatAll(myEditor)
+function commentSelection(myEditor, isComment)
+...
 ```
 
 ...and much more...maybe later...
