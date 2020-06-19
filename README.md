@@ -19,7 +19,7 @@ WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"insertAnyStyles";$resultBool;$styl
 // JS: function setEditorHeight(myEditorName, myHeight)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"setEditorHeight";$resultBool;"merge";"calc";"3")
 ```
-```js
+```javascript
 function replaceTextFragments(myEl, myOldTxt, myNewTxt)
 function setMyEditorOpt(myEditor, mySel)
 function setSpecials(myEditor, mySel)
