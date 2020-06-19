@@ -3,24 +3,23 @@
 This demo can used as webdev-workbench or as small webdev-helpertool  or for other experiments.
 
 This is just a rudimentary work to pick a few bites or to understand processes and solutions. Preparations are intended to fully integrate an app (e.g. 4D) outside the web area. Prepared JavaScript functions to execute CodeMirror actions via e.g. a 4D command like this:
-```
+```4d
 // JS: function insertInEditor(myEditorName, mySrc)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"insertInEditor";$resultBool;"mergeleft";$contentText)
 ```
-```
+```4d
 // JS: function setBodyBGColor(myBGColor)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"setBodyBGColor";$resultBool;"#f7f3f7")
 ```
-```
+```4d
 // JS: function insertAnyStyles(myCSS, myID)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"insertAnyStyles";$resultBool;$styles;"mySpecStyles1")
 ```
-```
+```4d
 // JS: function setEditorHeight(myEditorName, myHeight)
 WA EXECUTE JAVASCRIPT FUNCTION(*;"oWebArea3";"setEditorHeight";$resultBool;"merge";"calc";"3")
-
 ```
-```
+```js
 function replaceTextFragments(myEl, myOldTxt, myNewTxt)
 function setMyEditorOpt(myEditor, mySel)
 function setSpecials(myEditor, mySel)
