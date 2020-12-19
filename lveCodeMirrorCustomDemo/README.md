@@ -4,8 +4,7 @@ A list of Demos for any CodeMirror basics and CodeMirror inside 4DWebArea templa
 
 ### Just some demo examples
 
-<details>
-<summary>Can used as webdev-workbench or as small webdev-helpertool or for other experiments</summary>
+### Can used as webdev-workbench or as small webdev-helpertool or for other experiments
 - [check_4D_HTML](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML.html)
 - [check_4D_HTML_onlycss](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlycss.html)
 - [check_4D_HTML_onlycsshtml](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlycsshtml.html)
@@ -14,18 +13,14 @@ A list of Demos for any CodeMirror basics and CodeMirror inside 4DWebArea templa
 - [check_4D_HTML_onlyjs](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlyjs.html)
 - [check_4D_HTML_onlyjson](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlyjson.html)
 - [check_4D_HTML_onlymerge](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlymerge.html)
-</details>
 
-<details>
-<summary>Some demo examples to 4D mode and theme</summary>
+### Some demo examples to 4D mode and theme
 - [merge4Dmain with preset mode+theme to 4D](https://lveith.github.io/CodeMirrorV5.54-WithMyCustoms/codemirror-5-54-0_2020-05-20/mp/merge4Dmain.html)
 - [merge4D with preset mode+theme to plain-text](https://lveith.github.io/CodeMirrorV5.54-WithMyCustoms/codemirror-5-54-0_2020-05-20/demo/merge4D.html)
 - [folding4D with preset mode+theme to 4D](https://lveith.github.io/CodeMirrorV5.54-WithMyCustoms/codemirror-5-54-0_2020-05-20/demo/folding4D.html)
 - [mode4Dindex with preset mode+theme to 4D](https://lveith.github.io/CodeMirrorV5.54-WithMyCustoms/codemirror-5-54-0_2020-05-20/mode/4d/index.html)
-</details>
 
-<details>
-<summary>CodeMirror basic demos</summary>
+### CodeMirror basic demos
 - [activeline](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/demo/activeline.html)
 - [anywordhint](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/demo/anywordhint.html)
 - [bidi](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/demo/bidi.html)
@@ -72,4 +67,3 @@ A list of Demos for any CodeMirror basics and CodeMirror inside 4DWebArea templa
 - [visibletabs](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/demo/visibletabs.html)
 - [widget](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/demo/widget.html)
 - [xmlcomplete](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/demo/xmlcomplete.html)
-</details>
