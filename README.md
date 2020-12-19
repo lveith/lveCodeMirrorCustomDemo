@@ -52,3 +52,13 @@ function commentSelection(myEditor, isComment)
 ...and much more...maybe later...
 
 ![github-small](https://user-images.githubusercontent.com/65073460/82428184-6c381300-9a8a-11ea-9e84-9cacd433481f.png)
+
+### Just some demo examples
+- [check_4D_HTML](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML.html)
+- [check_4D_HTML_onlycss](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlycss.html)
+- [check_4D_HTML_onlycsshtml](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlycsshtml.html)
+- [check_4D_HTML_onlycssmerge](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlycssmerge.html)
+- [check_4D_HTML_onlyhtml](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlyhtml.html)
+- [check_4D_HTML_onlyjs](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlyjs.html)
+- [check_4D_HTML_onlyjson](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlyjson.html)
+- [check_4D_HTML_onlymerge](https://lveith.github.io/lveCodeMirrorCustomDemo/lveCodeMirrorCustomDemo/check_4D_HTML_onlymerge.html)
